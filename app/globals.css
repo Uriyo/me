@@ -110,3 +110,7 @@
   font-style: normal;
 }
 
+
+* {
+  cursor: none;
+}

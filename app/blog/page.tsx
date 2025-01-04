@@ -36,12 +36,12 @@ export default function ProjectsPage() {
                 ))}
               </div>
               <div className="flex gap-4">
-                <Button asChild variant="outline" size="sm">
+                {/* <Button asChild variant="outline" size="sm">
                   {/* <Link href={project.github} target="_blank">
                     <Github className="mr-2 h-4 w-4" />
                     Code
-                  </Link> */}
-                </Button>
+                  </Link>
+                </Button> */}
                 <Button asChild size="sm" className='font-serif font-semibold flex justify-center flex-row items-center'>
                   <Link href={project.demo} target="_blank">
                     <ExternalLink className="mr-2 h-4 w-4" />

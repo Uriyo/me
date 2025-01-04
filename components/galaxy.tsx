@@ -20,7 +20,10 @@ import aws from "@/public/images/aws.svg"
 import mongo from "@/public/images/mongo.svg"
 import supabase from "@/public/images/supabase.svg"
 import git from "@/public/images/git.svg"
-import { Github,Linkedin,Twitter, Mail } from 'lucide-react';
+import tailwind from "@/public/images/tailwind.svg"
+import materialUi from "@/public/images/material-ui-svgrepo-com.svg"
+import shadcn from "@/public/images/shadcn2.png";
+import express from "@/public/images/express-svgrepo-com.svg"
 import Link from "next/link";
 
 
@@ -130,8 +133,10 @@ export function Galaxy() {
             <Image alt="nexticon" height={90} width={90} src={next} />
             <Image alt="nexticon" height={90} width={90} src={react} />
             <Image alt="nexticon" height={90} width={90} src={nodejs} />
+            <Image alt="nexticon" height={90} width={90} src={express} />
             <Image alt="nexticon" height={90} width={90} src={html} />
             <Image alt="nexticon" height={100} width={100} src={javascript} />
+            <Image alt="nexticon" height={90} width={90} src='https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1200px-Typescript_logo_2020.svg.png' />
             <Image
               alt="nexticon"
               height={90}
@@ -145,6 +150,12 @@ export function Galaxy() {
             <Image alt="nexticon" height={100} width={100} src={postgres} />
             <Image alt="nexticon" height={90} width={90} src={mongo} />
             <Image alt="nexticon" height={90} width={90} src={git} />
+            <Image alt="nexticon" height={90} width={90} src={tailwind} />
+            <Image alt="nexticon" height={90} width={90} src={shadcn} />
+            <Image alt="nexticon" height={90} width={90} src={materialUi} />
+            
+            
+            <Image alt="nexticon" height={90} width={90} src='https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_Apps_Script.svg/768px-Google_Apps_Script.svg.png?20221103122014' />
           </div>
         </div>
       </motion.div>

@@ -181,7 +181,7 @@ export const blogs = [
     description:
       "Cross-Origin Resource Sharing (CORS) is a browser security feature that permits servers to specify which domains can access their resources. ",
     image:
-      "https://miro.medium.com/v2/resize:fit:828/format:webp/1*ty8m8Y3dzgD6P5Xc17gbYw.jpeg",
+      "https://miro.medium.com/v2/resize:fit:828/format:webp/1*5c_emW3v-j5Hhrajb-pxlw.png",
     tags: ["CORS", "Preflight Request", "CSRF"],
     github: "https://github.com/yourusername/project1",
     demo: "https://medium.com/@kgang6434/cors-unchained-strengthening-web-security-with-preflight-requests-52e89caa0ac3",
