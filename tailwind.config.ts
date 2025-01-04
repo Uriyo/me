@@ -9,9 +9,7 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      animation: {
-        blink: 'blink 1s steps(2, start) infinite',
-      },
+      
       fontFamily: {
         futuraThin: ["'Futura Thin'", "sans-serif"],
         futuraBook: ["'Futura Std Book'", "sans-serif"],
