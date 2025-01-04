@@ -5,7 +5,7 @@ import { Canvas, useFrame } from "@react-three/fiber";
 import { Points, PointMaterial } from "@react-three/drei";
 import * as random from "maath/random";
 import { motion } from "framer-motion";
-import Typical from 'react-typical'
+
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { Github,Linkedin,Twitter, Mail } from 'lucide-react';
