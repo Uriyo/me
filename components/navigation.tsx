@@ -4,55 +4,47 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
-import { Earth,Images , FolderGit2, FileText,NotebookText, Mail } from "lucide-react";
-
-const navItems = [
-  {
-    path: "/",
-    name: "Home",
-    icon: Earth,
-  },
-  {
-    path: "/projects",
-    name: "Projects",
-    icon: FolderGit2,
-  },
-  {
-    path: "/resume",
-    name: "Resume",
-    icon: FileText,
-  },
-  {
-    path: "/blog",
-    name: "Blog",
-    icon: NotebookText,
-  },
-  {
-    path: "/contact",
-    name: "Contact",
-    icon: Mail,
-  },
-  {
-    path: "/muse",
-    name: "Muse",
-    icon: Images ,
-  }
-];
+import { navItems } from "@/public/constants";
+import { useState } from "react";
+import { Menu, X } from "lucide-react";
 
 export function Navigation() {
   const pathname = usePathname();
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 right-0 z-50 p-8">
-      <div className="flex items-center gap-6 p-4 bg-black/20 backdrop-blur-lg rounded-full border border-white/10">
+    <nav className="fixed top-0 right-0 z-50 p-4 md:p-8">
+      {/* Mobile Menu Button */}
+      <button
+        onClick={() => setIsOpen(!isOpen)}
+        className="md:hidden p-2 bg-black/20 backdrop-blur-lg rounded-full border border-white/10 text-white"
+      >
+        {isOpen ? <X size={24} /> : <Menu size={24} />}
+      </button>
+
+      {/* Navigation Links */}
+      <div
+        className={cn(
+          "absolute right-4 top-16 md:relative md:right-0 md:top-0",
+          "flex md:flex",
+          isOpen ? "flex" : "hidden md:flex",
+          "flex-col md:flex-row",
+          "items-start md:items-center",
+          "gap-2 md:gap-6",
+          "p-4 bg-black/20 backdrop-blur-lg rounded-2xl md:rounded-full",
+          "border border-white/10",
+          "min-w-[200px] md:min-w-0"
+        )}
+      >
         {navItems.map(({ path, name, icon: Icon }) => {
           const isActive = pathname === path;
           return (
             <Link
               key={path}
               href={path}
+              onClick={() => setIsOpen(false)}
               className={cn(
-                "relative px-4 py-2 rounded-full text-sm font-medium transition-colors",
+                "relative px-4 py-2 rounded-full text-sm font-medium transition-colors w-full md:w-auto",
                 isActive ? "text-white" : "text-white/60 hover:text-white"
               )}
             >

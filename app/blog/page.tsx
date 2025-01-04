@@ -11,8 +11,8 @@ import Image from 'next/image';
 
 export default function ProjectsPage() {
   return (
-    <div className="container mx-auto max-w-6xl px-4 py-16 mt-16">
-      <h1 className="text-4xl font-bold mb-8 font-futuraBook">TechToks</h1>
+    <div className="container mx-auto max-w-6xl px-5 py-16 mt-10 sm:mt-20">
+      <h1 className="text-4xl font-bold mb-8 font-futuraBook text-center sm:text-left">TechToks</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {blogs.map((project, index) => (
           <Card key={index} className="overflow-hidden">

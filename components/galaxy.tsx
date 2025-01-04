@@ -21,6 +21,8 @@ import aws from "@/public/images/aws.svg"
 import mongo from "@/public/images/mongo.svg"
 import supabase from "@/public/images/supabase.svg"
 import git from "@/public/images/git.svg"
+import { Github,Linkedin,Twitter, Mail } from 'lucide-react';
+import Link from "next/link";
 
 
 function Stars(props: any) {
@@ -120,7 +122,14 @@ export function Galaxy() {
           times and improved scalability. My aim is to deliver innovative
           solutions that enhance user engagement and experience.
         </p>
-        <div className="tracking-wider text-3xl text-center mt-48">
+        <div className="flex flex-row justify-center mt-16">
+          <Link href={'/'} className="px-4"><Github className="cursor-pointer w-10 h-10"/></Link>
+          <Link href={'https://www.linkedin.com/in/kushagra6434/'} className="px-4"><Linkedin className="w-10 h-10 cursor-pointer"/></Link>
+          <Link href={'/'} className="px-4"><Twitter className="w-10 h-10 cursor-pointer "/></Link>
+          <Link href={'/'} className="px-4"><Mail className="w-10 h-10 cursor-pointer"/></Link>
+        </div>
+        
+        <div className="tracking-wider text-3xl text-center mt-64">
           TECHNOLOGIES I HAVE WORKED ON
           <br/>
           <br/>
