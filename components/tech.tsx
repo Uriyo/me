@@ -7,7 +7,8 @@ import * as random from "maath/random";
 import { motion } from "framer-motion";
 import Typical from 'react-typical'
 import { useRouter } from "next/navigation";
-
+import Link from "next/link";
+import { Github,Linkedin,Twitter, Mail } from 'lucide-react';
 
 function Stars(props: any) {
   const ref = useRef<any>();
@@ -63,7 +64,20 @@ export function Tech() {
         <h1 className="text-4xl md:text-8xl font-semibold ">
         
         </h1>
-        
+        <div className="flex space-x-6  ">
+          <Link href="https://github.com/Uriyo" target="_blank" className="hover:scale-110 transition-transform">
+            <Github className="w-8 h-8 text-gray-400" />
+          </Link>
+          <Link href="https://www.linkedin.com/in/kushagra6434/" target="_blank" className="hover:scale-110 transition-transform">
+            <Linkedin className="w-8 h-8 text-gray-400" />
+          </Link>
+          <Link href="https://x.com/Kushagra_Gojo" target="_blank" className="hover:scale-110 transition-transform">
+            <Twitter className="w-8 h-8 text-gray-400" />
+          </Link>
+          <Link href="mailto:kushagra6434@gmail.com" className="hover:scale-110 transition-transform">
+            <Mail className="w-8 h-8 text-gray-400" />
+          </Link>
+        </div>
         
         {/* <motion.button
           whileHover={{ scale: 1.05 }}

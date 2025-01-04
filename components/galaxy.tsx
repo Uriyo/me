@@ -84,8 +84,7 @@ export function Galaxy() {
         <h2 className=" mt-5 md:mt-10 font-futuraThin text-xl md:text-3xl tracking-widest">
           WEB DEVELOPER | PHOTOGRAPHER
         </h2>
-        
-        
+
         {/* <motion.button
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
@@ -94,11 +93,12 @@ export function Galaxy() {
         >
           Connect
         </motion.button> */}
-    
+        
       </motion.div>
       <br />
-      <br /><br />
-      
+      <br />
+      <br />
+
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -122,31 +122,32 @@ export function Galaxy() {
           times and improved scalability. My aim is to deliver innovative
           solutions that enhance user engagement and experience.
         </p>
-        <div className="flex flex-row justify-center mt-16">
-          <Link href={'/'} className="px-4"><Github className="cursor-pointer w-10 h-10"/></Link>
-          <Link href={'https://www.linkedin.com/in/kushagra6434/'} className="px-4"><Linkedin className="w-10 h-10 cursor-pointer"/></Link>
-          <Link href={'/'} className="px-4"><Twitter className="w-10 h-10 cursor-pointer "/></Link>
-          <Link href={'/'} className="px-4"><Mail className="w-10 h-10 cursor-pointer"/></Link>
-        </div>
         
+
         <div className="tracking-wider text-3xl text-center mt-64">
           TECHNOLOGIES I HAVE WORKED ON
-          <br/>
-          <br/>
-          <br/>
-          <div className="grid lg:grid-cols-4 grid-cols-2 gap-6">
-              <Image alt="nexticon"  height={90} width={90} src={next}/>
-              <Image alt="nexticon" height={90} width={90} src={react}/>
-              <Image alt="nexticon" height={90} width={90} src={nodejs}/>
-              <Image alt="nexticon" height={90} width={90} src={html}/>
-              <Image alt="nexticon" height={100} width={100} src={javascript}/>
-              <Image alt="nexticon" height={90} width={90} className="rounded-full" src={aws}/>
-              <Image alt="nexticon" height={100} width={100} src={docker}/>
-              <Image alt="nexticon" height={80} width={80} src={supabase}/>
-              <Image alt="nexticon" height={100} width={100} src={firebase}/>
-              <Image alt="nexticon" height={100} width={100} src={postgres}/>
-              <Image alt="nexticon" height={90} width={90} src={mongo}/>
-              <Image alt="nexticon" height={90} width={90} src={git}/>
+          <br />
+          <br />
+          <br />
+          <div className="grid md:grid-cols-4 grid-cols-2 gap-6 max-w-5xl mx-28 ">
+            <Image alt="nexticon" height={90} width={90} src={next} />
+            <Image alt="nexticon" height={90} width={90} src={react} />
+            <Image alt="nexticon" height={90} width={90} src={nodejs} />
+            <Image alt="nexticon" height={90} width={90} src={html} />
+            <Image alt="nexticon" height={100} width={100} src={javascript} />
+            <Image
+              alt="nexticon"
+              height={90}
+              width={90}
+              className="rounded-full"
+              src={aws}
+            />
+            <Image alt="nexticon" height={100} width={100} src={docker} />
+            <Image alt="nexticon" height={80} width={80} src={supabase} />
+            <Image alt="nexticon" height={100} width={100} src={firebase} />
+            <Image alt="nexticon" height={100} width={100} src={postgres} />
+            <Image alt="nexticon" height={90} width={90} src={mongo} />
+            <Image alt="nexticon" height={90} width={90} src={git} />
           </div>
         </div>
       </motion.div>

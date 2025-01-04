@@ -23,7 +23,7 @@ export default function ProjectsPage() {
                     href="#"
                     className={`group relative flex h-48 items-end 
                       overflow-hidden rounded-lg bg-gray-100 shadow-lg  
-                      md:${muse.space}
+                      md: ${muse.space}
                       md:h-80`}
                   >
                     <Image

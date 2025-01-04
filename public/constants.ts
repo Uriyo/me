@@ -1,10 +1,10 @@
 //NAV ICONS
 import {
   Earth,
-  Images,
+  Camera,
   FolderGit2,
   FileText,
-  NotebookText,
+  Lightbulb,
   Mail,
 } from "lucide-react";
 
@@ -277,8 +277,8 @@ export const navItems = [
   },
   {
     path: "/blog",
-    name: "Blog",
-    icon: NotebookText,
+    name: "TechToks",
+    icon:  Lightbulb,
   },
   {
     path: "/contact",
@@ -287,7 +287,7 @@ export const navItems = [
   },
   {
     path: "/muse",
-    name: "Muse",
-    icon: Images,
+    name: "Photory",
+    icon: Camera,
   },
 ];
