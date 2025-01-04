@@ -5,7 +5,6 @@ import { Canvas, useFrame } from "@react-three/fiber";
 import { Points, PointMaterial } from "@react-three/drei";
 import * as random from "maath/random";
 import { motion } from "framer-motion";
-import Typical from 'react-typical'
 import { useRouter } from "next/navigation";
 import { Tech } from "./tech";
 import Image from "next/image";
@@ -105,11 +104,9 @@ export function Galaxy() {
         transition={{ duration: 0.8 }}
         className="mx-auto text-2xl max-w-3xl font-futuraBook"
       >
-        <Typical
-          steps={[`I'm a Full-stack Developer...`, 500]}
-          loop={Infinity}
-        />
-        <p className=" text-lg md:text-2xl ">
+        <p>I'm a Full-stack Developer<span className="font-extrabold animate-ping">_</span>
+        </p>
+        <p className=" text-lg md:text-2xl">
           I specialize in web development and cloud computing, utilizing a wide
           range of technologies to deliver scalable, secure, and efficient
           solutions. <br />
