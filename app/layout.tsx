@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import { ThemeProvider } from '@/components/theme-provider';
 import { Navigation } from '@/components/navigation';
-import CustomCursor from '@/components/Customcursor';
+import CustomCursor from '@/components/CustomCursor';
 
 
 const inter = Inter({ subsets: ['latin'] });
