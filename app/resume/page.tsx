@@ -33,14 +33,27 @@ export default function ResumePage() {
           </CardHeader>
           <CardContent className="space-y-4">
             <div>
-              <h3 className="font-semibold">Full Stack Developer</h3>
-              <p className="text-sm text-muted-foreground">SYMB Technologies • 2024 - Present</p>
+              <h3 className="font-semibold text-md">Software Engineer </h3>
+              <p className="text-sm text-muted-foreground">SYMB Technologies | June 2024 - Present</p>
               <ul className="list-disc list-inside mt-2 text-sm">
                 <li>Contributed in development of multiple full-stack applications</li>
                 <li>Integrated the Open Elephant (SaaS) a portal for employee training and monitoring.</li>
                 <li>Refined the training management process, leading to a 25% reduction in administrative overhead and improved training completion rates.</li>
               </ul>
             </div>
+            <div>
+              <h3 className="font-semibold">Full Stack Developer </h3>
+              <p className="text-sm text-muted-foreground">DevopSpatial | April 2024 - June 2024</p>
+              <ul className="list-disc list-inside mt-2 text-sm">
+                <li className='list-item'>Devised and executed user registration and authentication frameworks using Fusion AUTH, which empowered 500+ users with
+                    secure access.</li>
+                <li>Seamlessly integrated critical tools, including goCD, Nexus and EKS, assigning SuperAdmin roles to ensure comprehensive access
+                    and control.</li>
+                <li>Developed a secure user management framework incorporating HTML, CSS, and NodeJS, now adopted by 15 team members
+                    & streamlined user onboarding processes.</li>
+              </ul>
+            </div>
+            
             {/* Add more experience items */}
           </CardContent>
         </Card>
@@ -56,7 +69,21 @@ export default function ResumePage() {
             </div>
           </CardContent>
         </Card>
-
+        <Card>
+          <CardHeader>
+            <CardTitle>Achievements & Certificates</CardTitle>
+          </CardHeader>
+          <CardContent className="space-y-4">
+            <div>
+              <h3 className="font-semibold">SIH 2022 ( SMART INDIA HACKATHON )</h3>
+              <p className="text-sm text-muted-foreground">Finalist</p>
+            </div>
+            <div>
+              <h3 className="font-semibold">AWS Certified Cloud Practitioner</h3>
+              <p className="text-sm text-muted-foreground">2023-2026</p>
+            </div>
+          </CardContent>
+        </Card>
         <Card>
           <CardHeader>
             <CardTitle>Skills</CardTitle>
