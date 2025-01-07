@@ -105,9 +105,9 @@ export function Galaxy() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="mx-auto text-2xl max-w-3xl font-futuraBook"
+        className="mx-auto px-10 md:px-5 text-2xl max-w-3xl font-futuraBook"
       >
-        <p>I'm a Full-stack Developer<span className="font-extrabold animate-ping">_</span>
+        <p>I am a Full-stack Developer<span className="font-extrabold animate-ping">_</span>
         </p>
         <p className=" text-lg md:text-2xl">
           I specialize in web development and cloud computing, utilizing a wide

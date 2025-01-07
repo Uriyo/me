@@ -38,7 +38,8 @@ import Img9 from "@/public/images/img11.jpg"
 import Img10 from "@/public/images/img12.jpg"
 import Img11 from "@/public/images/img8.jpg"
 import Img12 from "@/public/images/img9.jpg"
-
+import devopcentrum from "@/public/images/devopscentrum.png";
+import abm from "@/public/images/abm.png";
 
 
 // export const img1 = Img1;
@@ -59,18 +60,36 @@ export const Cooking: any = CookingImg;
 //PROJECTS DATA
 export const projects = [
   {
+    title: "ABM Technologies",
+    description:
+      "Developed the ABM Technologies website, showcasing the company's expertise in product development, LMS building, tech consulting, and generative AI solutions.",
+    image: abm,
+    tags: ["Next.js", "TypeScript", "Sass"],
+    github: "https://github.com/Uriyo/spendWise",
+    demo: "https://www.abmtechnologies.us/",
+  },
+  {
+    title: "DevOpsCentrum",
+    description:
+      "An end-to-end DevOps and infrastructure management platform tailored for startups and SME businesses, enabling them to focus solely on coding without the concerns of managing infrastructure, development, and production support for their products.",
+    image: devopcentrum,
+    tags: ["NodeJS", "TypeScript", "PostgreSQL", "AWS SDK", "FusionAuth"],
+    github: "https://github.com/Uriyo/spendWise",
+    demo: "https://devopscentrum.com/",
+  },
+  {
     title: "SpendWise",
     description:
-      "A full-stack web application built with Next.js and PostgreSQL",
+      "Developed a user-friendly expense tracker app that enables individuals to monitor spending, manage budgets, and handle group expenses effortlessly.",
     image: spendwise,
-    tags: ["Next.js", "TypeScript", "PostgreSQL", "Tailwind CSS"],
+    tags: ["Next.js","Tailwind CSS", "OpenAI", "Clerk"],
     github: "https://github.com/Uriyo/spendWise",
     demo: "https://spend-wise-henna.vercel.app/",
   },
   {
     title: "CoinTracker",
     description:
-      "A full-stack web application built with Next.js and PostgreSQL",
+      "Developed an application that provides users with the latest cryptocurrency news, real-time price updates, and trend analysis through interactive charts, enabling informed decision-making in the dynamic crypto market.",
     image: cointracker,
     tags: ["React", "Redux", "React Querry", "ChartJS", "TailwindCSS"],
     github: "https://github.com/yourusername/project1",
@@ -79,7 +98,7 @@ export const projects = [
   {
     title: "Eatsy",
     description:
-      "A full-stack web application built with Next.js and PostgreSQL",
+      "Developed a food ordering website UI that streamlines online meal purchases and user experience",
     image: Eatsy,
     tags: ["NodeJS", "React", "TailwindCSS", "TypeScript", "Stripe", "MongoDB"],
     github: "https://github.com/yourusername/project1",
@@ -279,11 +298,6 @@ export const navItems = [
     path: "/blog",
     name: "TechToks",
     icon:  Lightbulb,
-  },
-  {
-    path: "/contact",
-    name: "Contact",
-    icon: Mail,
   },
   {
     path: "/muse",
