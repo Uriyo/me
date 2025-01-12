@@ -15,6 +15,7 @@ import notesplayImg from "@/public/images/NotesPlay.png";
 import cointrackerImg from "@/public/images/cointTracker.png";
 import spendwiseImg from "@/public/images/spendwise hero (1).png";
 import CookingImg from "@/public/images/Cooking.png";
+import utech from "@/public/images/utech.png";
 
 // BLOG THUMBNAIL
 import mongo from "@/public/images/mongoDB.webp";
@@ -73,6 +74,15 @@ export const projects = [
     tags: ["Next.js","Tailwind CSS", "OpenAI", "Clerk"],
     github: "https://github.com/Uriyo/spendWise",
     demo: "https://spend-wise-henna.vercel.app/",
+  },
+  {
+    title: "uTeach",
+    description:
+      "Developed a highly responsive landing page, showcasing the company's various features.",
+    image: utech,
+    tags: ["Next.js","Tailwind CSS"],
+    github: "https://github.com/Uriyo/spendWise",
+    demo: "https://utech-orcin.vercel.app/",
   },
   {
     title: "CoinTracker",
