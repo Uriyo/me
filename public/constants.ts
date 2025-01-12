@@ -26,18 +26,6 @@ import Cors from "@/public/images/CORS.webp";
 import fiber from "@/public/images/fiber.webp";
 
 //MUSE THUMBNAIL
-import Img1 from "@/public/images/image1 (2).jpg";
-import Img2 from "@/public/images/image2 (2).jpg";
-import Img3 from "@/public/images/image3 (2).jpg";
-import Img4 from "@/public/images/image7.jpg";
-import Img5 from "@/public/images/image5.jpg";
-import Img6 from "@/public/images/image4.jpg";
-import Img7 from "@/public/images/image6.jpg";
-import Img8 from "@/public/images/img10.jpg"
-import Img9 from "@/public/images/img11.jpg"
-import Img10 from "@/public/images/img12.jpg"
-import Img11 from "@/public/images/img8.jpg"
-import Img12 from "@/public/images/img9.jpg"
 import devopcentrum from "@/public/images/devopscentrum.png";
 import abm from "@/public/images/abm.png";
 
@@ -210,70 +198,67 @@ export const blogs = [
 //MUSES IMAGES
 export const muses = [
   {
-    imageURL:Img1,
+    imageURL:'https://res.cloudinary.com/doyqpfgiq/image/upload/v1736261864/folioassets/image2_2_umtpk8.jpg',
     space:'col-span-2',
     des:'Lachung'
   },
   {
-    imageURL:Img5,
+    imageURL:'https://res.cloudinary.com/doyqpfgiq/image/upload/v1736261852/folioassets/image5_mx9iv2.jpg',
+    space:'col-span-1',
+    des:'BLR'
+  },
+  {
+    imageURL:'https://res.cloudinary.com/doyqpfgiq/image/upload/v1736261867/folioassets/image6_u0ibzw.jpg',
     space:'col-span-1',
     des:'IN'
   },
+  
   {
-    imageURL:Img6,
-    space:'col-span-1',
-    des:'IN'
-  },
-  {
-    imageURL:Img3,
+    imageURL:'https://res.cloudinary.com/doyqpfgiq/image/upload/v1736261859/folioassets/image3_2_yggxmn.jpg',
     space:'col-span-2',
     des:'Sikkim'
   },
   {
-    imageURL:Img7,
-    space:'col-span-2',
-    des:'IN'
-  },
-  {
-    imageURL:Img6,
-    space:'col-span-1',
-    des:'IN'
-  },
-  {
-    imageURL:Img8,
-    space:'col-span-2',
-    des:'Sikkim'
-  },
-  {
-    imageURL:Img3,
-    space:'col-span-1',
-    des:'Sikkim'
-  },
-  {
-    imageURL:Img10,
-    space:'col-span-1',
-    des:'Shimla'
-  },
-  {
-    imageURL:Img9,
+    imageURL:'https://res.cloudinary.com/doyqpfgiq/image/upload/v1736261878/folioassets/img11_j4vnc5.jpg',
     space:'col-span-2',
     des:'Shimla'
   },
   {
-    imageURL:Img12,
-    space:'col-span-2',
-    des:'Darjling'
+    imageURL:'https://res.cloudinary.com/doyqpfgiq/image/upload/v1736261853/folioassets/image7_nb1q3j.jpg',
+    space:'col-span-1',
+    des:'IN'
   },
   {
-    imageURL:Img8,
+    imageURL:'https://res.cloudinary.com/doyqpfgiq/image/upload/v1736261868/folioassets/img9_br6qbz.jpg',
+    space:'col-span-2',
+    des:'Sikkim'
+  },
+  {
+    imageURL:'https://res.cloudinary.com/doyqpfgiq/image/upload/v1736261862/folioassets/image4_ic4oxq.jpg',
     space:'col-span-1',
+    des:'TN'
+  },
+  {
+    imageURL:'https://res.cloudinary.com/doyqpfgiq/image/upload/v1736261865/folioassets/img8_tulscq.jpg',
+    space:'col-span-1',
+    des:'Tiger Hills'
+  },
+  {
+    imageURL:'https://res.cloudinary.com/doyqpfgiq/image/upload/v1736261869/folioassets/image1_2_zizpl9.jpg',
+    space:'col-span-2',
+    des:'Lachung'
+  },
+  {
+    imageURL:'https://res.cloudinary.com/doyqpfgiq/image/upload/v1736261875/folioassets/img10_qabhdk.jpg',
+    space:'col-span-2',
     des:'Gangtok'
   },
   {
-    imageURL:Img11,
-    space:'col-span-2',
-    des:'Tiger Hill'
+    imageURL:'https://res.cloudinary.com/doyqpfgiq/image/upload/v1736261876/folioassets/img12_ls2wnm.jpg',
+    space:'col-span-1',
+    des:'Shimla'
   },
+  
 
 ];
 

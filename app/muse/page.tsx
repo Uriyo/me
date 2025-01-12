@@ -18,12 +18,12 @@ export default function ProjectsPage() {
             {
               muses.map((muse,index)=>{
                 return (
-                  <Link
+                  <Link 
                     key={index}
                     href="#"
                     className={`group relative flex h-48 items-end 
                       overflow-hidden rounded-lg bg-gray-100 shadow-lg  
-                      md: ${muse.space}
+                       ${muse.space === 'col-span-2' ? 'md:col-span-2' : 'md:col-span-1'} 
                       md:h-80`}
                   >
                     <Image
@@ -38,6 +38,10 @@ export default function ProjectsPage() {
                     <MapPin/> {" "}{muse.des}
                     </span>
                   </Link>
+
+                  
+
+
                 );
               })
             }
