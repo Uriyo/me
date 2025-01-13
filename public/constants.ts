@@ -9,13 +9,13 @@ import {
 } from "lucide-react";
 
 // PROJECT THUMBNAIL
-import NatoursImg from "@/public/images/Natours.png";
-import EatsyImg from "@/public/images/Eatsy.png";
-import notesplayImg from "@/public/images/NotesPlay.png";
-import cointrackerImg from "@/public/images/cointTracker.png";
-import spendwiseImg from "@/public/images/spendwise hero (1).png";
-import CookingImg from "@/public/images/Cooking.png";
-import utech from "@/public/images/utech.png";
+// import NatoursImg from "@/public/images/Natours.png";
+// import EatsyImg from "@/public/images/Eatsy.png";
+// import notesplayImg from "@/public/images/NotesPlay.png";
+// import cointrackerImg from "@/public/images/cointTracker.png";
+// import spendwiseImg from "@/public/images/spendwise hero (1).png";
+// import CookingImg from "@/public/images/Cooking.png";
+// import utech from "@/public/images/utech.png";
 
 // BLOG THUMBNAIL
 import mongo from "@/public/images/mongoDB.webp";
@@ -39,12 +39,6 @@ import abm from "@/public/images/abm.png";
 // export const img6 = Img6;
 // export const img7 = Img7;
 
-export const Natours: any = NatoursImg;
-export const Eatsy: any = EatsyImg;
-export const notesplay: any = notesplayImg;
-export const cointracker: any = cointrackerImg;
-export const spendwise: any = spendwiseImg;
-export const Cooking: any = CookingImg;
 
 //PROJECTS DATA
 export const projects = [
@@ -52,7 +46,7 @@ export const projects = [
     title: "ABM Technologies",
     description:
       "Developed the ABM Technologies website, showcasing the company's expertise in product development, LMS building, tech consulting, and generative AI solutions.",
-    image: abm,
+    image: 'https://res.cloudinary.com/doyqpfgiq/image/upload/v1736768823/abm_cf0akv.png',
     tags: ["Next.js", "TypeScript", "Sass"],
     github: "https://github.com/Uriyo/spendWise",
     demo: "https://www.abmtechnologies.us/",
@@ -61,7 +55,7 @@ export const projects = [
     title: "DevOpsCentrum",
     description:
       "An end-to-end DevOps and infrastructure management platform tailored for startups and SME businesses, enabling them to focus solely on coding without the concerns of managing infrastructure, development, and production support for their products.",
-    image: devopcentrum,
+    image: 'https://res.cloudinary.com/doyqpfgiq/image/upload/v1736768819/devopscentrum_abcwtd.png',
     tags: ["NodeJS", "TypeScript", "PostgreSQL", "AWS SDK", "FusionAuth"],
     github: "https://github.com/Uriyo/spendWise",
     demo: "https://devopscentrum.com/",
@@ -70,7 +64,7 @@ export const projects = [
     title: "SpendWise",
     description:
       "Developed a user-friendly expense tracker app that enables individuals to monitor spending, manage budgets, and handle group expenses effortlessly.",
-    image: spendwise,
+    image: 'https://res.cloudinary.com/doyqpfgiq/image/upload/v1736768822/spendwise_hero_1_l2njym.png',
     tags: ["Next.js","Tailwind CSS", "OpenAI", "Clerk"],
     github: "https://github.com/Uriyo/spendWise",
     demo: "https://spend-wise-henna.vercel.app/",
@@ -79,7 +73,7 @@ export const projects = [
     title: "uTeach",
     description:
       "Developed a highly responsive landing page, showcasing the company's various features.",
-    image: utech,
+    image: 'https://res.cloudinary.com/doyqpfgiq/image/upload/v1736768823/utech_w4k1r0.png',
     tags: ["Next.js","Tailwind CSS"],
     github: "https://github.com/Uriyo/spendWise",
     demo: "https://utech-orcin.vercel.app/",
@@ -88,7 +82,7 @@ export const projects = [
     title: "CoinTracker",
     description:
       "Developed an application that provides users with the latest cryptocurrency news, real-time price updates, and trend analysis through interactive charts, enabling informed decision-making in the dynamic crypto market.",
-    image: cointracker,
+    image: 'https://res.cloudinary.com/doyqpfgiq/image/upload/v1736768820/cointTracker_afpptl.png',
     tags: ["React", "Redux", "React Querry", "ChartJS", "TailwindCSS"],
     github: "https://github.com/yourusername/project1",
     demo: "https://cointracker-44f16.web.app/",
@@ -97,7 +91,7 @@ export const projects = [
     title: "Eatsy",
     description:
       "Developed a food ordering website UI that streamlines online meal purchases and user experience",
-    image: Eatsy,
+    image: 'https://res.cloudinary.com/doyqpfgiq/image/upload/v1736768821/Eatsy_r9w8yk.png',
     tags: ["NodeJS", "React", "TailwindCSS", "TypeScript", "Stripe", "MongoDB"],
     github: "https://github.com/yourusername/project1",
     demo: "https://eatsy-frontend.onrender.com/",
@@ -106,7 +100,7 @@ export const projects = [
     title: "NotesPlay",
     description:
       "A full-stack web application built with Next.js and PostgreSQL",
-    image: notesplay,
+    image: 'https://res.cloudinary.com/doyqpfgiq/image/upload/v1736768820/NotesPlay_uvjrbe.png',
     tags: ["Next.js", "TypeScript", "PostgreSQL", "Tailwind CSS"],
     github: "https://github.com/yourusername/project1",
     demo: "https://project1.com",
@@ -115,7 +109,7 @@ export const projects = [
     title: "CookingBlog",
     description:
       "A full-stack web application built with Next.js and PostgreSQL",
-    image: Cooking,
+    image: 'https://res.cloudinary.com/doyqpfgiq/image/upload/v1736768975/Cooking_ds8hok.png',
     tags: ["Express", "EJS", "Javascript", "MongoDB", "TailwindCSS"],
     github: "https://github.com/yourusername/project1",
     demo: "https://cookingblog-9nxj.onrender.com/",
@@ -124,7 +118,7 @@ export const projects = [
     title: "Natours",
     description:
       "A full-stack web application built with Next.js and PostgreSQL",
-    image: Natours,
+    image: 'https://res.cloudinary.com/doyqpfgiq/image/upload/v1736768820/Natours_zhoj4o.png',
     tags: ["NodeJS", "Express", "MongoDB", "Stripe", "PUG"],
     github: "https://github.com/yourusername/project1",
     demo: "https://natours-dnph.onrender.com/",
