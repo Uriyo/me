@@ -32,7 +32,7 @@ export default function ProjectsPage() {
                       className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
                       width={600}
                       height={600}
-                      priority
+                      priority={true}
                     />
                     <span className="flex relative ml-4 mb-3 text-sm text-white md:ml-5 md:text-lg">
                     <MapPin/> {" "}{muse.des}
