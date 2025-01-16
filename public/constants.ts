@@ -61,6 +61,15 @@ export const projects = [
     demo: "https://devopscentrum.com/",
   },
   {
+    title: "OpenElephant",
+    description:
+      "Open Elephant LMS is a cloud-based employee training platform built with Open edX, Docker, and hosted on AWS. It enables efficient training and progress tracking, helping organizations optimize workforce development.",
+    image: 'https://res.cloudinary.com/doyqpfgiq/image/upload/v1737028695/folioassets/openelephant_ulf9im.png',
+    tags: ["OpenEdx", "Django", "Docker"],
+    github: "https://github.com/Uriyo/spendWise",
+    demo: "https://openelephant.com/",
+  },
+  {
     title: "SpendWise",
     description:
       "Developed a user-friendly expense tracker app that enables individuals to monitor spending, manage budgets, and handle group expenses effortlessly.",
@@ -90,7 +99,7 @@ export const projects = [
   {
     title: "Eatsy",
     description:
-      "Developed a food ordering website UI that streamlines online meal purchases and user experience",
+      "Developed a food ordering website UI that streamlines online meal purchases and user experience.",
     image: 'https://res.cloudinary.com/doyqpfgiq/image/upload/v1736768821/folioassets/Eatsy_r9w8yk.png',
     tags: ["NodeJS", "React", "TailwindCSS", "TypeScript", "Stripe", "MongoDB"],
     github: "https://github.com/yourusername/project1",
@@ -99,16 +108,16 @@ export const projects = [
   {
     title: "NotesPlay",
     description:
-      "A full-stack web application built with Next.js and PostgreSQL",
-    image: 'https://res.cloudinary.com/doyqpfgiq/image/upload/v1736768820/folioassets/NotesPlay_uvjrbe.png',
-    tags: ["Next.js", "TypeScript", "PostgreSQL", "Tailwind CSS"],
+      "A web application that allow user to take notes from youtube video and download them.",
+    image: 'https://res.cloudinary.com/doyqpfgiq/image/upload/v1737055034/folioassets/notesplay2_sl0hij.png',
+    tags: ["Next.js", "TypeScript", "GenAI", "Tailwind CSS"],
     github: "https://github.com/yourusername/project1",
-    demo: "https://project1.com",
+    demo: "https://notesplay-cve5.vercel.app/",
   },
   {
     title: "CookingBlog",
     description:
-      "A full-stack web application built with Next.js and PostgreSQL",
+      "A web application for sharing receipes and cuisiens.",
     image: 'https://res.cloudinary.com/doyqpfgiq/image/upload/v1736768975/folioassets/Cooking_ds8hok.png',
     tags: ["Express", "EJS", "Javascript", "MongoDB", "TailwindCSS"],
     github: "https://github.com/yourusername/project1",
@@ -117,7 +126,7 @@ export const projects = [
   {
     title: "Natours",
     description:
-      "A full-stack web application built with Next.js and PostgreSQL",
+      "A full-stack web application for sharing tours and booking tours.",
     image: 'https://res.cloudinary.com/doyqpfgiq/image/upload/v1736768820/folioassets/Natours_zhoj4o.png',
     tags: ["NodeJS", "Express", "MongoDB", "Stripe", "PUG"],
     github: "https://github.com/yourusername/project1",

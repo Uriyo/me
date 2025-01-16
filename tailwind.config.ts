@@ -9,6 +9,33 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      typography: {
+        DEFAULT: {
+          css: {
+            pre: {
+              backgroundColor: 'rgb(40, 44, 52)', // Or any color you prefer
+              color: 'rgb(171, 178, 191)', // Or any color you prefer
+              padding: '1rem',
+              borderRadius: '0.375rem',
+              marginTop: '1.5em',
+              marginBottom: '1.5em',
+            },
+            code: {
+              backgroundColor: 'rgb(40, 44, 52)', // Or any color you prefer
+              color: 'rgb(171, 178, 191)', // Or any color you prefer
+              padding: '0.25rem 0.5rem',
+              borderRadius: '0.25rem',
+              fontWeight: '400',
+            },
+            'code::before': {
+              content: '""',
+            },
+            'code::after': {
+              content: '""',
+            },
+          },
+        },
+      },
       
       fontFamily: {
         futuraThin: ["'Futura Thin'", "sans-serif"],
