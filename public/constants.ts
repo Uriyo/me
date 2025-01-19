@@ -30,6 +30,10 @@ import fiber from "@/public/images/fiber.webp";
 import devopcentrum from "@/public/images/devopscentrum.png";
 import abm from "@/public/images/abm.png";
 
+import img1 from "./images/img1.jpg"
+import img2 from "./images/img2.jpg"
+import img3 from "./images/img3.jpg"
+import img4 from "./images/img4.jpg"
 
 // export const img1 = Img1;
 // export const img2 = Img2;
@@ -209,71 +213,84 @@ export const blogs = [
 ];
 
 //MUSES IMAGES
+
+
 export const muses = [
   {
-    imageURL:'https://res.cloudinary.com/doyqpfgiq/image/upload/v1736261864/folioassets/image2_2_umtpk8.jpg',
-    space:'col-span-2',
-    des:'Lachung'
+    imageURL: 'https://res.cloudinary.com/doyqpfgiq/image/upload/v1737307535/folioassets/image1_p3dob9.jpg',
+    blurDataURL: 'https://res.cloudinary.com/doyqpfgiq/image/upload/e_blur:2000,q_1/v1737307535/folioassets/image1_p3dob9.jpg',
+    space: 'col-span-2',
+    des: 'Lachung',
   },
   {
-    imageURL:'https://res.cloudinary.com/doyqpfgiq/image/upload/v1736261852/folioassets/image5_mx9iv2.jpg',
-    space:'col-span-1',
-    des:'BLR'
+    imageURL: 'https://res.cloudinary.com/doyqpfgiq/image/upload/v1737307513/folioassets/image5_bh7ub6.jpg',
+    blurDataURL: 'https://res.cloudinary.com/doyqpfgiq/image/upload/e_blur:2000,q_1/v1737307513/folioassets/image5_bh7ub6.jpg',
+    space: 'col-span-1',
+    des: 'BLR',
   },
   {
-    imageURL:'https://res.cloudinary.com/doyqpfgiq/image/upload/v1736261867/folioassets/image6_u0ibzw.jpg',
-    space:'col-span-1',
-    des:'IN'
-  },
-  
-  {
-    imageURL:'https://res.cloudinary.com/doyqpfgiq/image/upload/v1736261859/folioassets/image3_2_yggxmn.jpg',
-    space:'col-span-2',
-    des:'Sikkim'
+    imageURL: 'https://res.cloudinary.com/doyqpfgiq/image/upload/v1737307494/folioassets/image6_nidc3p.jpg',
+    blurDataURL: 'https://res.cloudinary.com/doyqpfgiq/image/upload/e_blur:2000,q_1/v1737307494/folioassets/image6_nidc3p.jpg',
+    space: 'col-span-1',
+    des: 'IN',
   },
   {
-    imageURL:'https://res.cloudinary.com/doyqpfgiq/image/upload/v1736261878/folioassets/img11_j4vnc5.jpg',
-    space:'col-span-2',
-    des:'Shimla'
+    imageURL: 'https://res.cloudinary.com/doyqpfgiq/image/upload/v1737307535/folioassets/image3_cqzb8p.jpg',
+    blurDataURL: 'https://res.cloudinary.com/doyqpfgiq/image/upload/e_blur:2000,q_1/v1737307535/folioassets/image3_cqzb8p.jpg',
+    space: 'col-span-2',
+    des: 'Sikkim',
   },
   {
-    imageURL:'https://res.cloudinary.com/doyqpfgiq/image/upload/v1736261853/folioassets/image7_nb1q3j.jpg',
-    space:'col-span-1',
-    des:'IN'
+    imageURL: 'https://res.cloudinary.com/doyqpfgiq/image/upload/v1737307493/folioassets/img11_k6yaas.jpg',
+    blurDataURL: 'https://res.cloudinary.com/doyqpfgiq/image/upload/e_blur:2000,q_1/v1737307493/folioassets/img11_k6yaas.jpg',
+    space: 'col-span-2',
+    des: 'Shimla',
   },
   {
-    imageURL:'https://res.cloudinary.com/doyqpfgiq/image/upload/v1736261868/folioassets/img9_br6qbz.jpg',
-    space:'col-span-2',
-    des:'Sikkim'
+    imageURL: 'https://res.cloudinary.com/doyqpfgiq/image/upload/v1737307514/folioassets/image7_nhtfs9.jpg',
+    blurDataURL: 'https://res.cloudinary.com/doyqpfgiq/image/upload/e_blur:2000,q_1/v1737307514/folioassets/image7_nhtfs9.jpg',
+    space: 'col-span-1',
+    des: 'IN',
   },
   {
-    imageURL:'https://res.cloudinary.com/doyqpfgiq/image/upload/v1736261862/folioassets/image4_ic4oxq.jpg',
-    space:'col-span-1',
-    des:'TN'
+    imageURL: 'https://res.cloudinary.com/doyqpfgiq/image/upload/v1737307497/folioassets/img9_jvn59s.jpg',
+    blurDataURL: 'https://res.cloudinary.com/doyqpfgiq/image/upload/e_blur:2000,q_1/v1737307497/folioassets/img9_jvn59s.jpg',
+    space: 'col-span-2',
+    des: 'Sikkim',
   },
   {
-    imageURL:'https://res.cloudinary.com/doyqpfgiq/image/upload/v1736261865/folioassets/img8_tulscq.jpg',
-    space:'col-span-1',
-    des:'Tiger Hills'
+    imageURL: 'https://res.cloudinary.com/doyqpfgiq/image/upload/v1737307492/folioassets/image4_ioidqv.jpg',
+    blurDataURL: 'https://res.cloudinary.com/doyqpfgiq/image/upload/e_blur:2000,q_1/v1737307492/folioassets/image4_ioidqv.jpg',
+    space: 'col-span-1',
+    des: 'TN',
   },
   {
-    imageURL:'https://res.cloudinary.com/doyqpfgiq/image/upload/v1736261869/folioassets/image1_2_zizpl9.jpg',
-    space:'col-span-2',
-    des:'Lachung'
+    imageURL: 'https://res.cloudinary.com/doyqpfgiq/image/upload/v1737307495/folioassets/img8_tfzvup.jpg',
+    blurDataURL: 'https://res.cloudinary.com/doyqpfgiq/image/upload/e_blur:2000,q_1/v1737307495/folioassets/img8_tfzvup.jpg',
+    space: 'col-span-1',
+    des: 'Tiger Hills',
   },
   {
-    imageURL:'https://res.cloudinary.com/doyqpfgiq/image/upload/v1736261875/folioassets/img10_qabhdk.jpg',
-    space:'col-span-2',
-    des:'Gangtok'
+    imageURL: 'https://res.cloudinary.com/doyqpfgiq/image/upload/v1737307493/folioassets/img11_k6yaas.jpg',
+    blurDataURL: 'https://res.cloudinary.com/doyqpfgiq/image/upload/e_blur:2000,q_1/v1737307493/folioassets/img11_k6yaas.jpg',
+    space: 'col-span-2',
+    des: 'Lachung',
   },
   {
-    imageURL:'https://res.cloudinary.com/doyqpfgiq/image/upload/v1736261876/folioassets/img12_ls2wnm.jpg',
-    space:'col-span-1',
-    des:'Shimla'
+    imageURL: 'https://res.cloudinary.com/doyqpfgiq/image/upload/v1737307499/folioassets/img10_iibu3s.jpg',
+    blurDataURL: 'https://res.cloudinary.com/doyqpfgiq/image/upload/e_blur:2000,q_1/v1737307499/folioassets/img10_iibu3s.jpg',
+    space: 'col-span-2',
+    des: 'Gangtok',
   },
-  
-
+  {
+    imageURL: 'https://res.cloudinary.com/doyqpfgiq/image/upload/v1737307493/folioassets/img12_sxrtx7.jpg',
+    blurDataURL: 'https://res.cloudinary.com/doyqpfgiq/image/upload/e_blur:2000,q_1/v1737307493/folioassets/img12_sxrtx7.jpg',
+    space: 'col-span-1',
+    des: 'Shimla',
+  },
 ];
+
+
 
 //NAV Items
 export const navItems = [
