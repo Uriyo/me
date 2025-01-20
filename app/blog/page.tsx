@@ -45,7 +45,7 @@ export default function ProjectsPage() {
                 <Button asChild size="sm" className='font-serif font-semibold flex justify-center flex-row items-center'>
                   <Link href={project.demo} target="_blank">
                     <ExternalLink className="mr-2 h-4 w-4" />
-                    Medium
+                    Read
                   </Link>
                 </Button>
               </div>

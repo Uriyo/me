@@ -149,17 +149,7 @@ export const blogs = [
       "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*e6RD9x4ycH5m8_IYSv3Y6Q.png",
     tags: ["Threads", "NodeJS", "Multithreading"],
     github: "https://github.com/Uriyo/spendWise",
-    demo: "https://medium.com/@kgang6434/threads-in-nodejs-29fad10bee3a",
-  },
-  {
-    title: "Kubernetes Architecture",
-    description:
-      "A full-stack web application built with Next.js and PostgreSQL",
-    image:
-      "https://miro.medium.com/v2/resize:fit:828/format:webp/1*d4Ff4GxOh_ElNcTinQ_7tw.png",
-    tags: ["Kubernetes", "DevOps"],
-    github: "https://github.com/yourusername/project1",
-    demo: "https://medium.com/@kgang6434/kubernetes-s-architecture-5538b141f4c7",
+    demo: "/blogpost/thread-nodejs",
   },
   {
     title: "React 19 ",
@@ -169,7 +159,7 @@ export const blogs = [
       "https://miro.medium.com/v2/resize:fit:828/format:webp/1*YePVzjkjsadOqzQ03wl5kA.png",
     tags: ["React", "Frontend Dev"],
     github: "https://github.com/yourusername/project1",
-    demo: "https://medium.com/@kgang6434/react-19-everything-you-need-to-know-48c3c5c38ec3",
+    demo: "/blogpost/react19",
   },
   {
     title: "AWS cloud and its benefits",
@@ -178,7 +168,7 @@ export const blogs = [
     image: aws,
     tags: ["AWS", "Cloud"],
     github: "https://github.com/yourusername/project1",
-    demo: "https://medium.com/@kgang6434/leveraging-the-power-of-aws-cloud-companies-and-their-benefits-bb8d29fd5e86",
+    demo: "/blogpost/leveraging-aws",
   },
   {
     title: "Fiber Dynamics",
@@ -188,17 +178,7 @@ export const blogs = [
       "https://miro.medium.com/v2/resize:fit:828/format:webp/1*Tdv-AyrlsM0eE8ikanQK5Q.jpeg",
     tags: ["Fiber", "React", "Re-Rendering"],
     github: "https://github.com/yourusername/project1",
-    demo: "https://medium.com/@kgang6434/react-fiber-7be9e8fdebf5",
-  },
-  {
-    title: "Aggregating MongoDB Collections",
-    description:
-      "Aggregation in MongoDB is a powerful tool for processing large volumes of documents in a collection.",
-    image:
-      "https://miro.medium.com/v2/resize:fit:828/format:webp/1*ty8m8Y3dzgD6P5Xc17gbYw.jpeg",
-    tags: ["MongoDB", "Database", "NoSQL"],
-    github: "https://github.com/yourusername/project1",
-    demo: "https://medium.com/@kgang6434/aggregating-mongodb-collections-d4a78fefa21b",
+    demo: "/blogpost/fiber-dynamics",
   },
   {
     title: "CORS Unchanined",
@@ -208,7 +188,7 @@ export const blogs = [
       "https://miro.medium.com/v2/resize:fit:828/format:webp/1*5c_emW3v-j5Hhrajb-pxlw.png",
     tags: ["CORS", "Preflight Request", "CSRF"],
     github: "https://github.com/yourusername/project1",
-    demo: "https://medium.com/@kgang6434/cors-unchained-strengthening-web-security-with-preflight-requests-52e89caa0ac3",
+    demo: "/blogpost/cors-unchained",
   },
 ];
 
