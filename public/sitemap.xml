@@ -21,7 +21,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
     <image:image>
-      <image:loc>https://www.kushagragangwar.tech/images/projects-banner.jpg</image:loc>
+      <image:loc>https://www.kushagragangwar.tech/images/hero.png</image:loc>
       <image:title>Portfolio Projects</image:title>
       <image:caption>Showcase of my technical projects and work</image:caption>
     </image:image>
