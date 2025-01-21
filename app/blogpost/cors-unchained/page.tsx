@@ -4,6 +4,7 @@ import { formatDate, getYouTubeEmbedUrl } from "@/utils/blogUtils";
 import CodeSnippet from "@/components/codesnippet";
 import Head from "next/head";
 import { Metadata } from "next";
+import { Subscribe } from "@/components/subscribe";
 
 // Mock data for the blog post
 const blogPost = {
@@ -277,6 +278,7 @@ export default function BlogPost() {
                 return null;
             }
           })}
+          <Subscribe/>
         </article>
         <div className="mt-10 mx-auto flex justify-center">****************</div>
       </main>

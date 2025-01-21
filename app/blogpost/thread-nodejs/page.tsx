@@ -4,6 +4,9 @@ import { formatDate, getYouTubeEmbedUrl } from "@/utils/blogUtils";
 import CodeSnippet from "@/components/codesnippet";
 import Head from "next/head";
 import { Metadata } from "next";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Subscribe } from "@/components/subscribe";
 
 // Mock data for the blog post
 const blogPost = {
@@ -378,7 +381,9 @@ export const metadata: Metadata = {
 
 export default function BlogPost() {
   return (
-    <div className={`font-futuraBook   min-h-screen font- bg-black mt-36 text-gray-100`}>
+    <div
+      className={`font-futuraBook   min-h-screen font- bg-black mt-36 text-white`}
+    >
       {/* Main content */}
       <Head>
         <title>{blogPost.title}</title>
@@ -388,7 +393,8 @@ export default function BlogPost() {
         <article className="max-w-3xl mx-auto">
           <h2 className="text-4xl font-bold mb-4">{blogPost.title}</h2>
           <div className="text-gray-400 mb-8">
-            <span>{blogPost.author}</span> | <span>{formatDate(blogPost.date)}</span>
+            <span>{blogPost.author}</span> |{" "}
+            <span>{formatDate(blogPost.date)}</span>
           </div>
 
           {blogPost.content.map((item, index) => {
@@ -396,34 +402,31 @@ export default function BlogPost() {
               case "text":
                 return item.content ? (
                   <p key={index} className="mb-6 text-lg leading-loose">
-                    {item.content 
-                      .split("**")
-                      .map((part, i) =>
-                        i % 2 === 0 ? (
-                          part
-                        ) : (
-                          <strong key={i} className="font-extrabold">
-                            {part}
-                          </strong>
-                        )
-                      )}
+                    {item.content.split("**").map((part, i) =>
+                      i % 2 === 0 ? (
+                        part
+                      ) : (
+                        <strong key={i} className="font-extrabold">
+                          {part}
+                        </strong>
+                      )
+                    )}
                   </p>
-                ): null;
+                ) : null;
               case "heading":
                 return (
                   <h1
                     key={index}
-                    className={`text-${item.level === 1 ? "3xl" : "2xl"} font-bold mb-4`}
+                    className={`text-${
+                      item.level === 1 ? "3xl" : "2xl"
+                    } font-bold mb-4`}
                   >
                     {item.content}
                   </h1>
                 );
               case "subheading":
                 return (
-                  <h3
-                    key={index}
-                    className={`text-xl font-semibold mb-4`}
-                  >
+                  <h3 key={index} className={`text-xl font-semibold mb-4`}>
                     {item.content}
                   </h3>
                 );
@@ -432,7 +435,7 @@ export default function BlogPost() {
                   <div key={index} className="mb-6">
                     <Image
                       src={item.src || ""}
-                      alt={item.alt|| ""}
+                      alt={item.alt || ""}
                       width={item.width}
                       height={item.height}
                       className="rounded-lg"
@@ -472,12 +475,16 @@ export default function BlogPost() {
                 return null;
             }
           })}
+          
+          <Subscribe/>
         </article>
-        <div className="mt-10 mx-auto flex justify-center">****************</div>
+        <div className="mt-10 mx-auto flex justify-center">
+          ****************
+        </div>
       </main>
 
       {/* Footer */}
-      <footer className="bg-black py-6 mt-12 border-t-2">
+      <footer className="bg-black font-futuraBook py-6 mt-12 border-t-2">
         <div className="container mx-auto px-4 text-xs text-center text-gray-600">
           © 2025 All rights reserved.
         </div>
