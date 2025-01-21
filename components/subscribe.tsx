@@ -29,7 +29,7 @@ export function Subscribe() {
     setMessage("");
 
     try {
-      const response = await fetch("https://script.google.com/macros/s/AKfycbz9zdRyMN75jS3oZhanmCDlUos73PxtBjpqrd1q48_rWWVtNLfk518HFFa6UzZkC69t/exec", {
+      const response = await fetch(process.env.NEXT_PUBLIC_GOOGLE_SCRIPT_URL as string, {
         redirect: "follow",
         method: "POST",
         headers: {
