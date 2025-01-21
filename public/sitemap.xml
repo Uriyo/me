@@ -2,36 +2,150 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 
         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  <!-- Homepage -->
   <url>
     <loc>https://www.kushagragangwar.tech/</loc>
     <lastmod>2025-01-07T12:20:31+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.00</priority>
   </url>
+
+  <!-- Main Sections -->
   <url>
     <loc>https://www.kushagragangwar.tech/projects</loc>
     <lastmod>2025-01-07T12:28:37+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
+    <image:image>
+      <image:loc>https://www.kushagragangwar.tech/images/projects-banner.jpg</image:loc>
+      <image:title>Portfolio Projects</image:title>
+      <image:caption>Showcase of my technical projects and work</image:caption>
+    </image:image>
   </url>
+
   <url>
     <loc>https://www.kushagragangwar.tech/resume</loc>
     <lastmod>2025-01-07T12:28:37+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
+
   <url>
     <loc>https://www.kushagragangwar.tech/blog</loc>
     <lastmod>2025-01-07T12:28:37+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
   </url>
+
   <url>
     <loc>https://www.kushagragangwar.tech/muse</loc>
     <lastmod>2025-01-07T12:28:37+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
+  </url>
+
+  <!-- Blog Posts -->
+  <url>
+    <loc>https://www.kushagragangwar.tech/blogpost/cors-unchained</loc>
+    <lastmod>2023-07-27T12:28:37+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.70</priority>
+    <news:news>
+      <news:publication>
+        <news:name>Kushagra Gangwar's Tech Blog</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2025-01-07T12:28:37+00:00</news:publication_date>
+      <news:title>“CORS Unchained: Strengthening Web Security with Preflight Requests”</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://www.kushagragangwar.tech/images/CORS.webp</image:loc>
+      <image:title>CORS Explained</image:title>
+      <image:caption>Understanding Cross-Origin Resource Sharing in Web Development</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.kushagragangwar.tech/blogpost/fiber-dynamics</loc>
+    <lastmod>2024-02-17T12:28:37+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.70</priority>
+    <news:news>
+      <news:publication>
+        <news:name>Kushagra Gangwar's Tech Blog</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2025-01-07T12:28:37+00:00</news:publication_date>
+      <news:title>Fiber Dynamics: Accelerating the Speed of Rendering</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://www.kushagragangwar.tech/images/fiber.webp</image:loc>
+      <image:title>React Fiber Architecture</image:title>
+      <image:caption>Deep dive into React's Fiber reconciliation engine</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.kushagragangwar.tech/blogpost/leveraging-aws</loc>
+    <lastmod>2023-07-27T12:28:37+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.70</priority>
+    <news:news>
+      <news:publication>
+        <news:name>Kushagra Gangwar's Tech Blog</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2023-07-27T12:28:37+00:00</news:publication_date>
+      <news:title>Leveraging the Power of AWS Cloud: Companies and Their Benefits</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://www.kushagragangwar.tech/images/aws (1).png</image:loc>
+      <image:title>AWS Services</image:title>
+      <image:caption> AWS services </image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.kushagragangwar.tech/blogpost/react19</loc>
+    <lastmod>2025-01-07T12:28:37+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.70</priority>
+    <news:news>
+      <news:publication>
+        <news:name>Kushagra Gangwar's Tech Blog</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2024-03-03T12:28:37+00:00</news:publication_date>
+      <news:title>React 19: Everything You Need to Know</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://www.kushagragangwar.tech/images/reactJS.webp</image:loc>
+      <image:title>React 19 Features</image:title>
+      <image:caption>Exploring the new features and improvements in React 19</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.kushagragangwar.tech/blogpost/thread-nodejs</loc>
+    <lastmod>2025-01-07T12:28:37+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.70</priority>
+    <news:news>
+      <news:publication>
+        <news:name>Kushagra Gangwar's Tech Blog</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2024-05-18T12:28:37+00:00</news:publication_date>
+      <news:title>Threads in NodeJS</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://www.kushagragangwar.tech/images/thread.webp</image:loc>
+      <image:title>Node.js Threading Model</image:title>
+      <image:caption>Deep dive into Node.js threading and event loop</image:caption>
+    </image:image>
   </url>
 </urlset>
