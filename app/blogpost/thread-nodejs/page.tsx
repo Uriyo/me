@@ -1,11 +1,9 @@
-"use-client";
+
 import Image from "next/image";
-import { formatDate, getYouTubeEmbedUrl } from "@/utils/blogUtils";
+import { formatDate } from "@/utils/blogUtils";
 import CodeSnippet from "@/components/codesnippet";
 import Head from "next/head";
 import { Metadata } from "next";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
 import { Subscribe } from "@/components/subscribe";
 
 // Mock data for the blog post

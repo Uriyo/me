@@ -1,6 +1,5 @@
 'use client';
 
-import Link from 'next/link';
 import { muses } from '@/public/constants';
 import Image from 'next/image';
 import { MapPin } from 'lucide-react';
@@ -22,9 +21,9 @@ export default function ProjectsPage() {
                 // eslint-disable-next-line react-hooks/rules-of-hooks
                 const [isLoading, setIsLoading] = useState(true);
                 return (
-                  <Link
+                  <div
                     key={index}
-                    href="#"
+                    
                     className={`group relative flex h-48 items-end 
                       overflow-hidden rounded-lg bg-gray-100 shadow-lg  
                        ${
@@ -49,7 +48,7 @@ export default function ProjectsPage() {
                     <span className="flex relative ml-4 mb-3 text-sm text-white md:ml-5 md:text-lg">
                       <MapPin /> {muse.des}
                     </span>
-                  </Link>
+                  </div>
                 );
               })
             }

@@ -197,10 +197,10 @@ export const blogs = [
 
 export const muses = [
   {
-    imageURL: 'https://res.cloudinary.com/doyqpfgiq/image/upload/v1737307535/folioassets/image1_p3dob9.jpg',
-    blurDataURL: 'https://res.cloudinary.com/doyqpfgiq/image/upload/e_blur:2000,q_1/v1737307535/folioassets/image1_p3dob9.jpg',
+    imageURL: 'https://res.cloudinary.com/doyqpfgiq/image/upload/v1737307493/folioassets/img11_k6yaas.jpg',
+    blurDataURL: 'https://res.cloudinary.com/doyqpfgiq/image/upload/e_blur:2000,q_1/v1737307493/folioassets/img11_k6yaas.jpg',
     space: 'col-span-2',
-    des: 'Lachung',
+    des: 'Shimla',
   },
   {
     imageURL: 'https://res.cloudinary.com/doyqpfgiq/image/upload/v1737307513/folioassets/image5_bh7ub6.jpg',
@@ -220,11 +220,12 @@ export const muses = [
     space: 'col-span-2',
     des: 'Sikkim',
   },
+  
   {
-    imageURL: 'https://res.cloudinary.com/doyqpfgiq/image/upload/v1737307493/folioassets/img11_k6yaas.jpg',
-    blurDataURL: 'https://res.cloudinary.com/doyqpfgiq/image/upload/e_blur:2000,q_1/v1737307493/folioassets/img11_k6yaas.jpg',
+    imageURL: 'https://res.cloudinary.com/doyqpfgiq/image/upload/v1737307535/folioassets/image1_p3dob9.jpg',
+    blurDataURL: 'https://res.cloudinary.com/doyqpfgiq/image/upload/e_blur:2000,q_1/v1737307535/folioassets/image1_p3dob9.jpg',
     space: 'col-span-2',
-    des: 'Shimla',
+    des: 'Lachung',
   },
   {
     imageURL: 'https://res.cloudinary.com/doyqpfgiq/image/upload/v1737307514/folioassets/image7_nhtfs9.jpg',

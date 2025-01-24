@@ -10,7 +10,7 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: "Kushagra Gangwar",
-  description: 'Explore the portfolio of Kushagra Gangwar, a passionate Software Engineer specializing in full-stack development with expertise in Nextjs, React.js, Node.js, cloud services, and more. Discover projects, achievements, and insights into the world of technology and innovation.',
+  description: 'Kushagra Gangwar is a Software Engineer with expertise in full-stack development, specializing in Next.js, React.js, Node.js, and cloud platforms. Explore insights into web development and software design. Interested in working together? Connect with Kushagra to collaborate on innovative projects and turn ideas into reality.',
   icons: {
     icon: [
       { url: '/favicon.ico' },
