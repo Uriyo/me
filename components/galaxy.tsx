@@ -24,7 +24,7 @@ import tailwind from "@/public/images/tailwind.svg"
 import materialUi from "@/public/images/material-ui-svgrepo-com.svg"
 import shadcn from "@/public/images/shadcn2.png";
 import express from "@/public/images/express-svgrepo-com.svg"
-import Link from "next/link";
+
 
 
 function Stars(props: any) {
@@ -75,7 +75,7 @@ export function Galaxy() {
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
+        transition={{ duration: 0.4 }}
         className="absolute inset-0 flex items-center justify-center flex-col text-center"
       >
         <h1 className="text-4xl md:text-8xl font-semibold ">
@@ -104,7 +104,7 @@ export function Galaxy() {
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
+        transition={{ duration: 0.4 }}
         className="mx-auto px-10 md:px-5 text-2xl max-w-3xl font-futuraBook"
       >
         <p>I am a Full-stack Developer<span className="font-extrabold animate-ping">_</span>
@@ -129,7 +129,7 @@ export function Galaxy() {
           <br />
           <br />
           <br />
-          <div className="grid md:grid-cols-4 grid-cols-2 gap-6 max-w-5xl mx-28 ">
+          <div className="pb-28  grid md:grid-cols-4 grid-cols-2 gap-6 max-w-5xl mx-28 ">
             <Image alt="nexticon" height={90} width={90} src={next} />
             <Image alt="nexticon" height={90} width={90} src={react} />
             <Image alt="nexticon" height={90} width={90} src={nodejs} />
@@ -160,9 +160,9 @@ export function Galaxy() {
         </div>
       </motion.div>
       {/* <Tech/> */}
-      <Canvas camera={{ position: [0, 0, 1] }}>
+      {/* <Canvas camera={{ position: [0, 0, 1] }}>
         <Stars />
-      </Canvas>
+      </Canvas> */}
       {/* <div className="absolute">
         sdfsd
       </div> */}
