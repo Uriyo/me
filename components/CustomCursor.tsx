@@ -28,7 +28,7 @@ const CustomCursor = () => {
       style={{
         left: `${position.x}px`,
         top: `${position.y}px`,
-        backgroundImage: 'url(https://cdn.custom-cursor.com/db/cursor/pointer_26.png)', // Your cursor image path
+        backgroundImage: 'url(https://res.cloudinary.com/doyqpfgiq/image/upload/v1737873719/folioassets/customcursor_beywd3.webp)', // Your cursor image path
         backgroundSize: 'contain',
         backgroundRepeat: 'no-repeat'
       }}

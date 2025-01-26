@@ -136,7 +136,7 @@ export function Galaxy() {
             <Image alt="nexticon" height={90} width={90} src={express} />
             <Image alt="nexticon" height={90} width={90} src={html} />
             <Image alt="nexticon" height={100} width={100} src={javascript} />
-            <Image alt="nexticon" height={90} width={90} src='https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1200px-Typescript_logo_2020.svg.png' />
+            <Image alt="nexticon" height={90} width={90} src='https://res.cloudinary.com/doyqpfgiq/image/upload/v1737874457/folioassets/1200px-Typescript_logo_2020.svg_ha5fy1.webp' />
             <Image
               alt="nexticon"
               height={90}
@@ -153,9 +153,7 @@ export function Galaxy() {
             <Image alt="nexticon" height={90} width={90} src={tailwind} />
             <Image alt="nexticon" height={90} width={90} src={shadcn} />
             <Image alt="nexticon" height={90} width={90} src={materialUi} />
-            
-            
-            <Image alt="nexticon" height={90} width={90} src='https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_Apps_Script.svg/768px-Google_Apps_Script.svg.png?20221103122014' />
+            <Image alt="nexticon" height={90} width={90} src='https://res.cloudinary.com/doyqpfgiq/image/upload/v1737874460/folioassets/768px-Google_Apps_Script.svg_vv0zzf.webp' />
           </div>
         </div>
       </motion.div>
