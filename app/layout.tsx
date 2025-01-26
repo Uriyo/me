@@ -4,7 +4,7 @@ import { Inter } from 'next/font/google';
 import { ThemeProvider } from '@/components/theme-provider';
 import { Navigation } from '@/components/navigation';
 import CustomCursor from '@/components/CustomCursor';
-
+import { Analytics } from "@vercel/analytics/react"
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -40,6 +40,7 @@ export default function RootLayout({
           <Navigation />
           <CustomCursor />
           {children}
+          <Analytics/>
         </ThemeProvider>
       </body>
     </html>
