@@ -4,7 +4,9 @@ import { Inter } from 'next/font/google';
 import { ThemeProvider } from '@/components/theme-provider';
 import { Navigation } from '@/components/navigation';
 import CustomCursor from '@/components/CustomCursor';
+
 import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -41,6 +43,7 @@ export default function RootLayout({
           <CustomCursor />
           {children}
           <Analytics/>
+          <SpeedInsights/>
         </ThemeProvider>
       </body>
     </html>
