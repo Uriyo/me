@@ -148,7 +148,7 @@ export default function LeveragingAws() {
             <span>{blogPost.author}</span> | <span>{formatDate(blogPost.date)}</span>
           </div>
             {isClient && (
-                        <AudioPlayer src="https://res.cloudinary.com/doyqpfgiq/video/upload/v1738570612/folioassets/blogs/threads_d1htnj.mp3" />
+                        <AudioPlayer src="https://res.cloudinary.com/doyqpfgiq/video/upload/v1738575521/folioassets/blogs/aws_dspjxe.mp3" />
                       )}
                       <br />
           {blogPost.content.map((item, index) => {

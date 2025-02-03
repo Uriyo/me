@@ -201,7 +201,7 @@ export default function Cors() {
             <span>{formatDate(blogPost.date)}</span>
           </div>
           {isClient && (
-            <AudioPlayer src="https://res.cloudinary.com/doyqpfgiq/video/upload/v1738570612/folioassets/blogs/threads_d1htnj.mp3" />
+            <AudioPlayer src="https://res.cloudinary.com/doyqpfgiq/video/upload/v1738576470/folioassets/blogs/CORS_jxahpi.mp3" />
           )}
           <br />
           {blogPost.content.map((item, index) => {

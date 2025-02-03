@@ -171,7 +171,7 @@ export default function React() {
             <span>{formatDate(blogPost.date)}</span>
           </div>
           {isClient && (
-            <AudioPlayer src="https://res.cloudinary.com/doyqpfgiq/video/upload/v1738570612/folioassets/blogs/threads_d1htnj.mp3" />
+            <AudioPlayer src="https://res.cloudinary.com/doyqpfgiq/video/upload/v1738575134/folioassets/blogs/react19_yicfrs.mp3" />
           )}
           <br />
           {blogPost.content.map((item, index) => {
