@@ -149,7 +149,7 @@ export const blogs = [
       "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*e6RD9x4ycH5m8_IYSv3Y6Q.png",
     tags: ["Threads", "NodeJS", "Multithreading"],
     github: "https://github.com/Uriyo/spendWise",
-    demo: "https://www.kushagragangwar.tech/blogpost/thread-nodejs",
+    demo: "https://www.kushagragangwar.tech/blog/thread-nodejs",
   },
   {
     title: "React 19 ",
@@ -159,7 +159,7 @@ export const blogs = [
       "https://miro.medium.com/v2/resize:fit:828/format:webp/1*YePVzjkjsadOqzQ03wl5kA.png",
     tags: ["React", "Frontend Dev"],
     github: "https://github.com/yourusername/project1",
-    demo: "https://www.kushagragangwar.tech/blogpost/react19",
+    demo: "https://www.kushagragangwar.tech/blog/react19",
   },
   {
     title: "AWS cloud and its benefits",
@@ -168,7 +168,7 @@ export const blogs = [
     image: aws,
     tags: ["AWS", "Cloud"],
     github: "https://github.com/yourusername/project1",
-    demo: "https://www.kushagragangwar.tech/blogpost/leveraging-aws",
+    demo: "https://www.kushagragangwar.tech/blog/leveraging-aws",
   },
   {
     title: "Fiber Dynamics",
@@ -178,7 +178,7 @@ export const blogs = [
       "https://miro.medium.com/v2/resize:fit:828/format:webp/1*Tdv-AyrlsM0eE8ikanQK5Q.jpeg",
     tags: ["Fiber", "React", "Re-Rendering"],
     github: "https://github.com/yourusername/project1",
-    demo: "https://www.kushagragangwar.tech/blogpost/fiber-dynamics",
+    demo: "https://www.kushagragangwar.tech/blog/fiber-dynamics",
   },
   {
     title: "CORS Unchanined",
@@ -188,7 +188,7 @@ export const blogs = [
       "https://miro.medium.com/v2/resize:fit:828/format:webp/1*5c_emW3v-j5Hhrajb-pxlw.png",
     tags: ["CORS", "Preflight Request", "CSRF"],
     github: "https://github.com/yourusername/project1",
-    demo: "https://www.kushagragangwar.tech/blogpost/cors-unchained",
+    demo: "https://www.kushagragangwar.tech/blog/cors-unchained",
   },
 ];
 

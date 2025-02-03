@@ -1,10 +1,10 @@
-
+"use client";
 import Image from "next/image";
 import { formatDate } from "@/utils/blogUtils";
 import CodeSnippet from "@/components/codesnippet";
-import Head from "next/head";
-import { Metadata } from "next";
 import { Subscribe } from "@/components/subscribe";
+import AudioPlayer from "@/components/AudioPlayer";
+import { useEffect, useState } from "react";
 
 // Mock data for the blog post
 const blogPost = {
@@ -369,25 +369,24 @@ cd index.js
   ],
 };
 
-export const metadata: Metadata = {
-    title: "Threads in Nodejs",
-    description: 'Understand Node.js threading: event loop, hidden threads, and worker-threads module. Learn how to handle CPU-intensive tasks efficiently.',
-    keywords:'Node.js, threads in Node.js, Node.js worker threads, Node.js threading, multithreading in Node.js, libuv Node.js, worker_threads module, Node.js process vs thread, Node.js multithreading tutorial, event loop in Node.js, Node.js performance optimization, CPU-bound tasks in Node.js, non-blocking I/O in Node.js, asynchronous programming in Node.js, Node.js concurrency, Node.js V8 engine, Node.js threading example, parallel programming in Node.js, Node.js child processes, Node.js scalability'
-}
 
 
 
 
-export default function BlogPost() {
+
+export default function Threads() {
+  const [isClient, setIsClient] = useState(false);
+  
+    useEffect(() => {
+      setIsClient(true);
+      console.log("Component Mounted");
+    }, []);
   return (
     <div
       className={`font-futuraBook   min-h-screen font- bg-black mt-36 text-white`}
     >
       {/* Main content */}
-      <Head>
-        <title>{blogPost.title}</title>
-        <meta name="description" content={`Read about ${blogPost.title}`} />
-      </Head>
+     
       <main className="container mx-auto px-4 py-8">
         <article className="max-w-3xl mx-auto">
           <h2 className="text-4xl font-bold mb-4">{blogPost.title}</h2>
@@ -395,6 +394,13 @@ export default function BlogPost() {
             <span>{blogPost.author}</span> |{" "}
             <span>{formatDate(blogPost.date)}</span>
           </div>
+
+                    {isClient && (
+                        
+                        <AudioPlayer src="https://res.cloudinary.com/doyqpfgiq/video/upload/v1738570612/folioassets/blogs/threads_d1htnj.mp3"/>
+                        
+                      )}
+                      <br/>
 
           {blogPost.content.map((item, index) => {
             switch (item.type) {

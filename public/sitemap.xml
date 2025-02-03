@@ -50,7 +50,7 @@
 
   <!-- Blog Posts -->
   <url>
-    <loc>https://www.kushagragangwar.tech/blogpost/cors-unchained</loc>
+    <loc>https://www.kushagragangwar.tech/blog/cors-unchained</loc>
     <lastmod>2023-07-27T12:28:37+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.70</priority>
@@ -70,7 +70,7 @@
   </url>
 
   <url>
-    <loc>https://www.kushagragangwar.tech/blogpost/fiber-dynamics</loc>
+    <loc>https://www.kushagragangwar.tech/blog/fiber-dynamics</loc>
     <lastmod>2024-02-17T12:28:37+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.70</priority>
@@ -90,7 +90,7 @@
   </url>
 
   <url>
-    <loc>https://www.kushagragangwar.tech/blogpost/leveraging-aws</loc>
+    <loc>https://www.kushagragangwar.tech/blog/leveraging-aws</loc>
     <lastmod>2023-07-27T12:28:37+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.70</priority>
@@ -110,7 +110,7 @@
   </url>
 
   <url>
-    <loc>https://www.kushagragangwar.tech/blogpost/react19</loc>
+    <loc>https://www.kushagragangwar.tech/blog/react19</loc>
     <lastmod>2025-01-07T12:28:37+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.70</priority>
@@ -130,7 +130,7 @@
   </url>
 
   <url>
-    <loc>https://www.kushagragangwar.tech/blogpost/thread-nodejs</loc>
+    <loc>https://www.kushagragangwar.tech/blog/thread-nodejs</loc>
     <lastmod>2025-01-07T12:28:37+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.70</priority>

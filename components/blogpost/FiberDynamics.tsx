@@ -1,10 +1,9 @@
-"use-client";
+"use client";
 import Image from "next/image";
 import { formatDate, getYouTubeEmbedUrl } from "@/utils/blogUtils";
-import CodeSnippet from "@/components/codesnippet";
-import Head from "next/head";
-import { Metadata } from "next";
 import { Subscribe } from "@/components/subscribe";
+import { useEffect, useState } from "react";
+import AudioPlayer from "../AudioPlayer";
 
 // Mock data for the blog post
 const blogPost = {
@@ -141,30 +140,27 @@ const blogPost = {
   ],
 };
 
-export const metadata: Metadata = {
-    title: "Fiber Dynamics: Accelerating the Speed of Rendering",
-    description: 'Discover how React Fiber enhances rendering performance by breaking tasks into manageable fibers, allowing asynchronous rendering and prioritized scheduling. Learn how this approach optimizes UI updates, improves responsiveness, and ensures smoother user experiences in React applications.',
-    keywords:'React Fiber, React rendering, asynchronous rendering, prioritized scheduling, fiber data structure, component hierarchy, fiber trees, React performance optimization, React components, rendering tasks, child pointers, fiber tree traversal, dynamic rendering, UI performance, React Fiber architecture, React reconciliation, React updates, component rendering, React evolution'
-}
-
-
-
-
-export default function BlogPost() {
-  return (
+export default function FiberDynamics() {
+    const [isClient, setIsClient] = useState(false);
+  
+    useEffect(() => {
+      setIsClient(true);
+      console.log("Component Mounted");
+    }, []);
+    return (
     <div className={`font-futuraBook   min-h-screen font- bg-black mt-36 text-gray-100`}>
       {/* Main content */}
-      <Head>
-        <title>{blogPost.title}</title>
-        <meta name="description" content={`Read about ${blogPost.title}`} />
-      </Head>
+     
       <main className="container mx-auto px-4 py-8">
         <article className="max-w-3xl mx-auto">
           <h2 className="text-4xl font-bold mb-4">{blogPost.title}</h2>
           <div className="text-gray-400 mb-8">
             <span>{blogPost.author}</span> | <span>{formatDate(blogPost.date)}</span>
           </div>
-
+            {isClient && (
+                        <AudioPlayer src="https://res.cloudinary.com/doyqpfgiq/video/upload/v1738570612/folioassets/blogs/threads_d1htnj.mp3" />
+                      )}
+                      <br />
           {blogPost.content.map((item, index) => {
             switch (item.type) {
               case "text":

@@ -1,10 +1,10 @@
-"use-client";
+"use client";
 import Image from "next/image";
 import { formatDate, getYouTubeEmbedUrl } from "@/utils/blogUtils";
 import CodeSnippet from "@/components/codesnippet";
-import Head from "next/head";
-import { Metadata } from "next";
 import { Subscribe } from "@/components/subscribe";
+import { useEffect, useState } from "react";
+import AudioPlayer from "@/components/AudioPlayer";
 
 // Mock data for the blog post
 const blogPost = {
@@ -174,63 +174,66 @@ Authorization: Bearer <token>`
   ],
 };
 
-export const metadata: Metadata = {
-    title: "CORS Unchained",
-    description: 'Secure your web applications with CORS and Preflight Requests. Learn how these mechanisms enable safe cross-origin communication, counter CSRF attacks, and protect sensitive data with practical examples and insights.',
-    keywords:'CORS, Preflight Requests, Cross-Origin Resource Sharing, browser security, CORS configuration, CORS headers, Access-Control-Allow-Origin, Access-Control-Allow-Methods, Access-Control-Allow-Headers, cross-origin requests,unauthorized access prevention, secure API communication, cookie theft prevention, session hijacking,  modern web applications, HTTP OPTIONS method, cross-origin API calls, secure web apps'
-}
 
 
 
 
-export default function BlogPost() {
+
+export default function Cors() {
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+    console.log("Component Mounted");
+  }, []);
+
   return (
-    <div className={`font-futuraBook   min-h-screen font- bg-black mt-36 text-gray-100`}>
+    <div
+      className={`font-futuraBook   min-h-screen font- bg-black mt-36 text-gray-100`}
+    >
       {/* Main content */}
-      <Head>
-        <title>{blogPost.title}</title>
-        <meta name="description" content={`Read about ${blogPost.title}`} />
-      </Head>
-      <main className="container mx-auto px-4 py-8">
+     
+      <div className="container mx-auto px-4 py-8">
         <article className="max-w-3xl mx-auto">
           <h2 className="text-4xl font-bold mb-4">{blogPost.title}</h2>
           <div className="text-gray-400 mb-8">
-            <span>{blogPost.author}</span> | <span>{formatDate(blogPost.date)}</span>
+            <span>{blogPost.author}</span> |{" "}
+            <span>{formatDate(blogPost.date)}</span>
           </div>
-
+          {isClient && (
+            <AudioPlayer src="https://res.cloudinary.com/doyqpfgiq/video/upload/v1738570612/folioassets/blogs/threads_d1htnj.mp3" />
+          )}
+          <br />
           {blogPost.content.map((item, index) => {
             switch (item.type) {
               case "text":
                 return item.content ? (
                   <p key={index} className="mb-6 text-lg leading-loose">
-                    {item.content 
-                      .split("**")
-                      .map((part, i) =>
-                        i % 2 === 0 ? (
-                          part
-                        ) : (
-                          <strong key={i} className="font-extrabold">
-                            {part}
-                          </strong>
-                        )
-                      )}
+                    {item.content.split("**").map((part, i) =>
+                      i % 2 === 0 ? (
+                        part
+                      ) : (
+                        <strong key={i} className="font-extrabold">
+                          {part}
+                        </strong>
+                      )
+                    )}
                   </p>
-                ): null;
+                ) : null;
               case "heading":
                 return (
                   <h1
                     key={index}
-                    className={`text-${item.level === 1 ? "3xl" : "2xl"} font-bold mb-4`}
+                    className={`text-${
+                      item.level === 1 ? "3xl" : "2xl"
+                    } font-bold mb-4`}
                   >
                     {item.content}
                   </h1>
                 );
               case "subheading":
                 return (
-                  <h3
-                    key={index}
-                    className={`text-xl font-semibold mb-4`}
-                  >
+                  <h3 key={index} className={`text-xl font-semibold mb-4`}>
                     {item.content}
                   </h3>
                 );
@@ -239,7 +242,7 @@ export default function BlogPost() {
                   <div key={index} className="mb-6">
                     <Image
                       src={item.src || ""}
-                      alt={item.alt|| ""}
+                      alt={item.alt || ""}
                       width={item.width}
                       height={item.height}
                       className="rounded-lg"
@@ -252,18 +255,18 @@ export default function BlogPost() {
                     <CodeSnippet code={item.content} language={item.language} />
                   </div>
                 );
-            //   case "link":
-            //     return (
-            //       <a
-            //         key={index}
-            //         href={(item.href) || ""}
-            //         target="_blank"
-            //         rel="noopener noreferrer"
-            //         className="text-blue-400 hover:underline"
-            //       >
-            //         {item.content}
-            //       </a>
-            //     );
+              //   case "link":
+              //     return (
+              //       <a
+              //         key={index}
+              //         href={(item.href) || ""}
+              //         target="_blank"
+              //         rel="noopener noreferrer"
+              //         className="text-blue-400 hover:underline"
+              //       >
+              //         {item.content}
+              //       </a>
+              //     );
               case "video":
                 return (
                   <div key={index} className="mb-6 aspect-w-16 aspect-h-9">
@@ -279,10 +282,12 @@ export default function BlogPost() {
                 return null;
             }
           })}
-          <Subscribe/>
+          <Subscribe />
         </article>
-        <div className="mt-10 mx-auto flex justify-center">****************</div>
-      </main>
+        <div className="mt-10 mx-auto flex justify-center">
+          ****************
+        </div>
+      </div>
 
       {/* Footer */}
       <footer className="bg-black py-6 mt-12 border-t-2">
