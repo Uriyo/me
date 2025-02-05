@@ -114,3 +114,75 @@
 * {
   cursor: none;
 }
+
+
+
+@layer base {
+  body {
+    @apply bg-gradient-to-b from-[rgb(var(--background-start-rgb))] to-[rgb(var(--background-end-rgb))];
+    min-height: 100vh;
+  }
+}
+
+.timeline-line {
+  @apply absolute left-4 top-0 h-full w-0.5 bg-white/50;
+}
+
+.timeline-line::before {
+  content: '';
+  @apply absolute -left-1.5 top-6 h-4 w-4 rounded-full bg-white;
+  box-shadow: var(--timeline-glow);
+}
+
+.timeline-branch {
+  @apply absolute -left-24 top-6 h-0.5 w-24 bg-gradient-to-r from-transparent to-white/50;
+}
+
+.timeline-branch::after {
+  content: '';
+  @apply absolute right-0 -top-1.5 h-4 w-4 rounded-full bg-white;
+  box-shadow: var(--timeline-glow);
+}
+
+.mystical-card {
+  @apply relative overflow-hidden rounded-lg border border-white/20 bg-gray-900/50 backdrop-blur-xl;
+}
+
+.mystical-card::before {
+  content: '';
+  @apply absolute inset-0 bg-gradient-to-r from-white/5 to-gray-500/5;
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+.glow-text {
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.skill-orb {
+  @apply relative flex h-20 w-20 items-center justify-center rounded-full bg-white/10 text-2xl;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+.skill-orb::before {
+  content: '';
+  @apply absolute inset-0 rounded-full;
+  background: radial-gradient(circle at center, rgba(255, 255, 255, 0.2) 0%, transparent 70%);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.4;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+}
