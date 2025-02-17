@@ -64,15 +64,15 @@ export const projects = [
     github: "https://github.com/Uriyo/spendWise",
     demo: "https://devopscentrum.com/",
   },
-  // {
-  //   title: "OpenElephant",
-  //   description:
-  //     "Open Elephant LMS is a cloud-based employee training platform built with Open edX, Docker, and hosted on AWS. It enables efficient training and progress tracking, helping organizations optimize workforce development.",
-  //   image: 'https://res.cloudinary.com/doyqpfgiq/image/upload/v1737028695/folioassets/openelephant_ulf9im.png',
-  //   tags: ["OpenEdx", "Django", "Docker"],
-  //   github: "https://github.com/Uriyo/spendWise",
-  //   demo: "https://openelephant.com/",
-  // },
+  {
+    title: "OpenElephant",
+    description:
+      "Open Elephant LMS is a cloud-based employee training platform built with Open edX, Docker, and hosted on AWS. It enables efficient training and progress tracking, helping organizations optimize workforce development.",
+    image: 'https://res.cloudinary.com/doyqpfgiq/image/upload/v1737028695/folioassets/openelephant_ulf9im.png',
+    tags: ["OpenEdx", "Django", "Docker"],
+    github: "https://github.com/Uriyo/spendWise",
+    demo: "https://openelephant.com/",
+  },
   {
     title: "SpendWise",
     description:
