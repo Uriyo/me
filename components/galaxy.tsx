@@ -84,7 +84,7 @@ export function Galaxy() {
           </span>
         </h1>
         <h2 className=" mt-5 md:mt-10 font-futuraThin text-xl md:text-3xl tracking-widest">
-          WEB DEVELOPER | TECH WRITER
+          GEN-AI DEVELOPER | TECH WRITER
         </h2>
 
         {/* <motion.button
@@ -107,10 +107,10 @@ export function Galaxy() {
         transition={{ duration: 0.4 }}
         className="mx-auto px-10 md:px-5 text-2xl max-w-3xl font-futuraBook"
       >
-        <p>I am a Full-stack Developer<span className="font-extrabold animate-ping">_</span>
+        <p>I am a GenAI Developer<span className="font-extrabold animate-ping">_</span>
         </p>
         <p className=" text-lg md:text-2xl">
-          I specialize in web development and cloud computing, utilizing a wide
+          I specialize in RAG-Applications, web development and cloud computing, utilizing a wide
           range of technologies to deliver scalable, secure, and efficient
           solutions. <br />
           <br />
