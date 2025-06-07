@@ -84,7 +84,7 @@ export function Galaxy() {
           </span>
         </h1>
         <h2 className=" mt-5 md:mt-10 font-futuraThin text-xl md:text-3xl tracking-widest">
-          GEN-AI DEVELOPER | TECH WRITER
+          Software Engineer | Tech Writer
         </h2>
 
         {/* <motion.button

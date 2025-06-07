@@ -47,6 +47,15 @@ import img4 from "./images/img4.jpg"
 //PROJECTS DATA
 export const projects = [
   {
+    title: "Prepzo AI",
+    description:
+      "Prepzo AI is a platform that helps you prepare for your interviews or anythin related to career be it resume building, linkedin profile building, etc.",
+    image: 'https://res.cloudinary.com/doyqpfgiq/image/upload/v1749316466/Screenshot_2025-06-07_224133_dyeun6.png',
+    tags: ["Next.js", "TypeScript", "PostgreSQL", "AWS SDK", "OpenAI", "LLM"],
+    github: "https://github.com/Uriyo/spendWise",
+    demo: "https://www.prepzo.ai/",
+  },
+  {
     title: "ABM Technologies",
     description:
       "Developed the ABM Technologies website, showcasing the company's expertise in product development, LMS building, tech consulting, and generative AI solutions.",
@@ -55,15 +64,16 @@ export const projects = [
     github: "https://github.com/Uriyo/spendWise",
     demo: "https://www.abmtechnologies.us/",
   },
-  {
-    title: "DevOpsCentrum",
-    description:
-      "An end-to-end DevOps and infrastructure management platform tailored for startups and SME businesses, enabling them to focus solely on coding without the concerns of managing infrastructure, development, and production support for their products.",
-    image: 'https://res.cloudinary.com/doyqpfgiq/image/upload/v1736768819/folioassets/devopscentrum_abcwtd.png',
-    tags: ["NodeJS", "TypeScript", "PostgreSQL", "AWS SDK", "FusionAuth"],
-    github: "https://github.com/Uriyo/spendWise",
-    demo: "https://devopscentrum.com/",
-  },
+  
+  // {
+  //   title: "DevOpsCentrum",
+  //   description:
+  //     "An end-to-end DevOps and infrastructure management platform tailored for startups and SME businesses, enabling them to focus solely on coding without the concerns of managing infrastructure, development, and production support for their products.",
+  //   image: 'https://res.cloudinary.com/doyqpfgiq/image/upload/v1736768819/folioassets/devopscentrum_abcwtd.png',
+  //   tags: ["NodeJS", "TypeScript", "PostgreSQL", "AWS SDK", "FusionAuth"],
+  //   github: "https://github.com/Uriyo/spendWise",
+  //   demo: "https://devopscentrum.com/",
+  // },
   {
     title: "OpenElephant",
     description:
