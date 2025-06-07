@@ -107,20 +107,25 @@ export function Galaxy() {
         transition={{ duration: 0.4 }}
         className="mx-auto px-10 md:px-5 text-2xl max-w-3xl font-futuraBook"
       >
-        <p>I am a GenAI Developer<span className="font-extrabold animate-ping">_</span>
+        <p>I am a Software Engineer<span className="font-extrabold animate-ping">_</span>
         </p>
         <p className=" text-lg md:text-2xl">
-          I specialize in RAG-Applications, web development and cloud computing, utilizing a wide
-          range of technologies to deliver scalable, secure, and efficient
-          solutions. <br />
+          I specialize in building intelligent applications that leverage the power of Generative AI, 
+          with expertise in RAG (Retrieval-Augmented Generation) applications, full-stack development, 
+          and cloud computing. My focus is on delivering scalable, secure, and efficient solutions that 
+          transform user experiences. 
           <br />
-          My job is to build applications that are not only functional and
-          user-friendly but also robust and scalable. I have implemented user
-          signup and login processes for over{" "}
-          <span className="underline">500 users</span>, integrated critical
-          tools for comprehensive access control, and achieved faster deployment
-          times and improved scalability. My aim is to deliver innovative
-          solutions that enhance user engagement and experience.
+          <br />
+          Throughout my career, I've successfully:
+          <br />
+          • Implemented user authentication systems serving {" "}
+          <span className="underline">500+ users</span>
+          <br />
+          • Developed AI-powered applications using OpenAI and LangChain
+          <br />
+          • Achieved significant improvements in deployment efficiency and scalability
+          <br />
+          • Created innovative solutions that enhance user engagement and experience
         </p>
         
 
