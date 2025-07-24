@@ -60,20 +60,28 @@ export const projects = [
     description:
       "Developed the ABM Technologies website, showcasing the company's expertise in product development, LMS building, tech consulting, and generative AI solutions.",
     image: 'https://res.cloudinary.com/doyqpfgiq/image/upload/v1736768823/folioassets/abm_cf0akv.png',
-    tags: ["Next.js", "TypeScript", "Sass"],
+    tags: ["Next.js", "TypeScript", "TailwindCSS"],
     github: "https://github.com/Uriyo/spendWise",
     demo: "https://www.abmtechnologies.us/",
   },
-  
-  // {
-  //   title: "DevOpsCentrum",
-  //   description:
-  //     "An end-to-end DevOps and infrastructure management platform tailored for startups and SME businesses, enabling them to focus solely on coding without the concerns of managing infrastructure, development, and production support for their products.",
-  //   image: 'https://res.cloudinary.com/doyqpfgiq/image/upload/v1736768819/folioassets/devopscentrum_abcwtd.png',
-  //   tags: ["NodeJS", "TypeScript", "PostgreSQL", "AWS SDK", "FusionAuth"],
-  //   github: "https://github.com/Uriyo/spendWise",
-  //   demo: "https://devopscentrum.com/",
-  // },
+  {
+    title: "Tagtaste",
+    description:
+      "Tagtaste is a platform that allows users to get various insurance policies.",
+    image: 'https://res.cloudinary.com/doyqpfgiq/image/upload/v1753376176/folioassets/tagtaste_dim0kv.png',
+    tags: ["React", "TailwindCSS", "TypeScript", "Google Analytics"],
+    github: "https://github.com/Uriyo/spendWise",
+    demo: "https://www.tagtaste.com/",
+  },
+  {
+    title: "Ombrellainsure",
+    description:
+      "Ombrella Insure is a platform that allows users to get various insurance policies.",
+    image: 'https://res.cloudinary.com/doyqpfgiq/image/upload/v1753375697/folioassets/Screenshot_2025-07-24_112242_h4k0fg.png',
+    tags: ["React", "TailwindCSS", "NodeJS", "TypeScript", "PostgreSQL", "AWS"],
+    github: "https://github.com/Uriyo/spendWise",
+    demo: "https://www.ombrellainsure.com/",
+  },
   {
     title: "OpenElephant",
     description:
@@ -92,15 +100,15 @@ export const projects = [
     github: "https://github.com/Uriyo/spendWise",
     demo: "https://spend-wise-henna.vercel.app/",
   },
-  {
-    title: "uTeach",
-    description:
-      "Developed a highly responsive landing page, showcasing the company's various features.",
-    image: 'https://res.cloudinary.com/doyqpfgiq/image/upload/v1736768823/folioassets/utech_w4k1r0.png',
-    tags: ["Next.js","Tailwind CSS"],
-    github: "https://github.com/Uriyo/spendWise",
-    demo: "https://utech-orcin.vercel.app/",
-  },
+  // {
+  //   title: "uTeach",
+  //   description:
+  //     "Developed a highly responsive landing page, showcasing the company's various features.",
+  //   image: 'https://res.cloudinary.com/doyqpfgiq/image/upload/v1736768823/folioassets/utech_w4k1r0.png',
+  //   tags: ["Next.js","Tailwind CSS"],
+  //   github: "https://github.com/Uriyo/spendWise",
+  //   demo: "https://utech-orcin.vercel.app/",
+  // },
   {
     title: "CoinTracker",
     description:
@@ -110,15 +118,15 @@ export const projects = [
     github: "https://github.com/yourusername/project1",
     demo: "https://cointracker-44f16.web.app/",
   },
-  {
-    title: "Eatsy",
-    description:
-      "Developed a food ordering website UI that streamlines online meal purchases and user experience.",
-    image: 'https://res.cloudinary.com/doyqpfgiq/image/upload/v1736768821/folioassets/Eatsy_r9w8yk.png',
-    tags: ["NodeJS", "React", "TailwindCSS", "TypeScript", "Stripe", "MongoDB"],
-    github: "https://github.com/yourusername/project1",
-    demo: "https://eatsy-frontend.onrender.com/",
-  },
+  // {
+  //   title: "Eatsy",
+  //   description:
+  //     "Developed a food ordering website UI that streamlines online meal purchases and user experience.",
+  //   image: 'https://res.cloudinary.com/doyqpfgiq/image/upload/v1736768821/folioassets/Eatsy_r9w8yk.png',
+  //   tags: ["NodeJS", "React", "TailwindCSS", "TypeScript", "Stripe", "MongoDB"],
+  //   github: "https://github.com/yourusername/project1",
+  //   demo: "https://eatsy-frontend.onrender.com/",
+  // },
   {
     title: "NotesPlay",
     description:
@@ -127,30 +135,52 @@ export const projects = [
     tags: ["Next.js", "TypeScript", "GenAI", "Tailwind CSS"],
     github: "https://github.com/yourusername/project1",
     demo: "https://notesplay-cve5.vercel.app/",
-  },
-  {
-    title: "CookingBlog",
-    description:
-      "A web application for sharing receipes and cuisiens.",
-    image: 'https://res.cloudinary.com/doyqpfgiq/image/upload/v1736768975/folioassets/Cooking_ds8hok.png',
-    tags: ["Express", "EJS", "Javascript", "MongoDB", "TailwindCSS"],
-    github: "https://github.com/yourusername/project1",
-    demo: "https://cookingblog-9nxj.onrender.com/",
-  },
-  {
-    title: "Natours",
-    description:
-      "A full-stack web application for sharing tours and booking tours.",
-    image: 'https://res.cloudinary.com/doyqpfgiq/image/upload/v1736768820/folioassets/Natours_zhoj4o.png',
-    tags: ["NodeJS", "Express", "MongoDB", "Stripe", "PUG"],
-    github: "https://github.com/yourusername/project1",
-    demo: "https://natours-dnph.onrender.com/",
-  },
+  }
   // Add more projects here
 ];
 
 //BLOG DATA
 export const blogs = [
+  {
+    title: "Vercel Ship 2025",
+    description:
+      "Vercel Ship is a new way to deploy your website. It is a platform that allows you to deploy your website without the need for a server.",
+    image:
+      "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*0PuSsGqzIbXRtXKwl69R-g.avif",
+    tags: ["Vercel", "AI", "Cloud"],
+    github: "https://github.com/Uriyo/spendWise",
+    demo: "https://medium.com/@kgang6434/vercel-ship-2025-vercel-is-now-turned-into-the-ai-cloud-eeb716eb02df",
+  },
+  {
+    title: "CI/CD with goCD",
+    description:
+      "CI/CD is a crucial part of modern software development. It helps to automate the build, test, and deployment of software.",
+    image:
+      "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*wnbpbKLxEmBHwBFYnQJLpg.png",
+    tags: ["CI/CD", "goCD", "Automation"],
+    github: "https://github.com/Uriyo/spendWise",
+    demo: "https://medium.com/@kgang6434/ci-cd-with-gocd-4710d5bb75d1",
+  },
+  {
+    title: "Database Replication and Partitioning",
+    description:
+      "Database Replication and Partitioning are two important concepts in database management.",
+    image:
+      "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*Jh8xgI49k8FKTepTIcYjGA.avif",
+    tags: ["Database", "Replication", "Partitioning"],
+    github: "https://github.com/Uriyo/spendWise",
+    demo: "https://medium.com/@kgang6434/database-replication-and-partitioning-4710d5bb75d1",
+  },
+  {
+    title: "Hyperthreading worth it?",
+    description:
+      "Hyperthreading is a feature that allows a single CPU core to simulate multiple threads, effectively doubling the number of available threads. This can lead to improved performance in certain applications, particularly those that are CPU-bound.",
+    image:
+      "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*BBrlBnWl0xWSOnS9IZHxlA.png",
+    tags: ["Threads", "NodeJS", "Multithreading"],
+    github: "https://github.com/Uriyo/spendWise",
+    demo: "https://medium.com/@kgang6434/hyperthreading-worth-it-11271f255176",
+  },
   {
     title: "Thread in NodeJs",
     description:

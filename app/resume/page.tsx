@@ -36,8 +36,19 @@ export default function ResumePage() {
               items={[
                 {
                   title: "Software Engineer",
+                  company: "Prepzo.ai",
+                  date: "March 2025 - Present",
+                  description:`Developed an AI-powered Career Coach Agent utilizing Next.js, Flask, Python, Pinecone, and Livekit, Enabled
+personalized career guidance and resume analysis, improving user engagement by at least 25%.
+ Architected and launched five distinct LLM-based conversational flows within the AI Career Coach, achieving a
+40% reduction in user query resolution time and improving user satisfaction.
+ Implemented a real-time feedback mechanism for users to rate the AI Career Coach Agent’s responses, resulting in
+a 30% increase in positive user engagement scores and a 10% reduction in negative feedback.`
+                },
+                {
+                  title: "Software Engineer",
                   company: "SYMB Technologies",
-                  date: "Jul 2024 - Present",
+                  date: "Jul 2024 - Feb 2025",
                   description:`I architected and deployed the company’s client-facing portal using Next.js, TypeScript, and Server-Side Rendering (SSR), achieving a perfect 100 Lighthouse score by implementing optimized Static Site Generation (SSG), asset compression, and critical CSS prioritization. To streamline content management, I integrated Drupal as a headless CMS, reducing content update time by 50% for editors. The portal was hosted on AWS using S3 and CloudFront, ensuring global low-latency access, which significantly improved SEO rankings by 30% and increased organic traffic by 15% within three months.`
                 },
                 {
@@ -70,7 +81,7 @@ export default function ResumePage() {
             />
 
             {/* Projects */}
-            <TimelineSection
+            {/* <TimelineSection
               title="Projects"
               emoji="🚀"
               items={[
@@ -93,7 +104,7 @@ export default function ResumePage() {
                   description: "I designed interactive charts using Chart.js to display real-time cryptocurrency price trends, thereby enhancing user engagement. Additionally, I built a responsive and intuitive user interface using React and Ant Design UI, ensuring a seamless and engaging user experience."
                 }
               ]}
-            />
+            /> */}
 
             {/* Certifications */}
             <TimelineSection
@@ -168,7 +179,10 @@ export default function ResumePage() {
                       "Prisma",
                       "Supabase",
                       "MySQL",
-                      "AWS RDS",
+                      "Pinecone",
+                      "Langchain",
+                      "OpenAI",
+                      "LLM",
                       "MongoDB",
                     ]}
                   />
