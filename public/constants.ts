@@ -340,4 +340,9 @@ export const navItems = [
     name: "Photory",
     icon: Camera,
   },
+  {
+    path: "/contact",
+    name: "Contact",
+    icon: Mail,
+  },
 ];
