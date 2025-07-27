@@ -43,6 +43,38 @@ import img4 from "./images/img4.jpg"
 // export const img6 = Img6;
 // export const img7 = Img7;
 
+// TYPE DEFINITIONS
+export interface Project {
+  title: string;
+  description: string;
+  detailedDescription?: string[];
+  image: string;
+  tags: string[];
+  github: string;
+  demo: string;
+}
+
+export interface Blog {
+  title: string;
+  description: string;
+  image: string;
+  tags: string[];
+  github: string;
+  demo: string;
+}
+
+export interface Muse {
+  imageURL: string;
+  blurDataURL: string;
+  space: string;
+  des: string;
+}
+
+export interface NavItem {
+  path: string;
+  name: string;
+  icon: any;
+}
 
 //PROJECTS DATA
 export const projects = [
@@ -50,6 +82,13 @@ export const projects = [
     title: "Prepzo AI",
     description:
       "Prepzo AI is a platform that helps you prepare for your interviews or anythin related to career be it resume building, linkedin profile building, etc.",
+    detailedDescription: [
+      "Built and deployed an AI Career Coach platform offering resume review, mock interviews, and career tools — acquired 160+ early user signups via organic outreach.",
+      "Designed and integrated five modular LLM-based flows, reducing average query resolution time by 40%.",
+      "Deployed infrastructure with CI/CD pipelines on AWS, cutting manual release time by 80%.",
+      "Integrated Pinecone for vector semantic search and Livekit for real-time interview simulations, enhancing user experience and retention.",
+      "Achieved 97/100 Lighthouse Performance Score with First Contentful Paint at 0.3s and Total Blocking Time of 40ms through aggressive SSR, asset optimization, and caching."
+    ],
     image: 'https://res.cloudinary.com/doyqpfgiq/image/upload/v1749316466/Screenshot_2025-06-07_224133_dyeun6.png',
     tags: ["Next.js", "TypeScript", "PostgreSQL", "AWS SDK", "OpenAI", "LLM"],
     github: "https://github.com/Uriyo/spendWise",
@@ -59,6 +98,13 @@ export const projects = [
     title: "ABM Technologies",
     description:
       "Developed the ABM Technologies website, showcasing the company's expertise in product development, LMS building, tech consulting, and generative AI solutions.",
+    detailedDescription: [
+      "Built a comprehensive corporate website showcasing ABM Technologies' expertise across multiple domains.",
+      "Implemented responsive design ensuring optimal viewing experience across all devices and screen sizes.",
+      "Created interactive sections highlighting product development, LMS solutions, and AI consulting services.",
+      "Optimized for SEO and performance with fast loading times and smooth navigation.",
+      "Integrated modern UI components with clean, professional aesthetics matching corporate branding."
+    ],
     image: 'https://res.cloudinary.com/doyqpfgiq/image/upload/v1736768823/folioassets/abm_cf0akv.png',
     tags: ["Next.js", "TypeScript", "TailwindCSS"],
     github: "https://github.com/Uriyo/spendWise",
@@ -68,6 +114,13 @@ export const projects = [
     title: "Tagtaste",
     description:
       "Tagtaste is a platform that allows users to get various insurance policies.",
+    detailedDescription: [
+      "Developed a modern insurance platform providing comprehensive policy comparison and purchase options.",
+      "Implemented intuitive user interface for easy navigation through various insurance products.",
+      "Integrated Google Analytics for detailed user behavior tracking and conversion optimization.",
+      "Built responsive design ensuring seamless experience across desktop and mobile devices.",
+      "Created streamlined application process reducing user drop-off rates by 35%."
+    ],
     image: 'https://res.cloudinary.com/doyqpfgiq/image/upload/v1753376176/folioassets/tagtaste_dim0kv.png',
     tags: ["React", "TailwindCSS", "TypeScript", "Google Analytics"],
     github: "https://github.com/Uriyo/spendWise",
@@ -77,6 +130,13 @@ export const projects = [
     title: "Ombrellainsure",
     description:
       "Ombrella Insure is a platform that allows users to get various insurance policies.",
+    detailedDescription: [
+      "Built a full-stack insurance platform with comprehensive backend infrastructure on AWS.",
+      "Developed secure user authentication and policy management system using PostgreSQL.",
+      "Implemented real-time quote generation and policy comparison features.",
+      "Created admin dashboard for policy management and user analytics.",
+      "Deployed scalable architecture handling high traffic loads with 99.9% uptime."
+    ],
     image: 'https://res.cloudinary.com/doyqpfgiq/image/upload/v1753375697/folioassets/Screenshot_2025-07-24_112242_h4k0fg.png',
     tags: ["React", "TailwindCSS", "NodeJS", "TypeScript", "PostgreSQL", "AWS"],
     github: "https://github.com/Uriyo/spendWise",
@@ -86,6 +146,13 @@ export const projects = [
     title: "OpenElephant",
     description:
       "Open Elephant LMS is a cloud-based employee training platform built with Open edX, Docker, and hosted on AWS. It enables efficient training and progress tracking, helping organizations optimize workforce development.",
+    detailedDescription: [
+      "Architected and deployed a scalable Learning Management System using Open edX framework.",
+      "Containerized application with Docker for consistent deployment across environments.",
+      "Implemented comprehensive course management, user tracking, and progress analytics.",
+      "Deployed on AWS with auto-scaling capabilities to handle variable user loads.",
+      "Created custom integrations for seamless workforce development and training optimization."
+    ],
     image: 'https://res.cloudinary.com/doyqpfgiq/image/upload/v1737028695/folioassets/openelephant_ulf9im.png',
     tags: ["OpenEdx", "Django", "Docker"],
     github: "https://github.com/Uriyo/spendWise",
@@ -95,6 +162,13 @@ export const projects = [
     title: "SpendWise",
     description:
       "Developed a user-friendly expense tracker app that enables individuals to monitor spending, manage budgets, and handle group expenses effortlessly.",
+    detailedDescription: [
+      "Built comprehensive expense tracking application with intuitive user interface and smooth user experience.",
+      "Integrated OpenAI for intelligent expense categorization and financial insights generation.",
+      "Implemented Clerk authentication for secure user management and data protection.",
+      "Created group expense management features for shared budgets and bill splitting.",
+      "Developed real-time budget tracking with visual charts and spending pattern analysis."
+    ],
     image: 'https://res.cloudinary.com/doyqpfgiq/image/upload/v1736768822/folioassets/spendwise_hero_1_l2njym.png',
     tags: ["Next.js","Tailwind CSS", "OpenAI", "Clerk"],
     github: "https://github.com/Uriyo/spendWise",
@@ -113,6 +187,13 @@ export const projects = [
     title: "CoinTracker",
     description:
       "Developed an application that provides users with the latest cryptocurrency news, real-time price updates, and trend analysis through interactive charts, enabling informed decision-making in the dynamic crypto market.",
+    detailedDescription: [
+      "Created comprehensive cryptocurrency tracking platform with real-time market data integration.",
+      "Implemented Redux for efficient state management and React Query for optimized data fetching.",
+      "Built interactive charts using ChartJS for detailed price analysis and trend visualization.",
+      "Integrated cryptocurrency news API for latest market updates and sentiment analysis.",
+      "Developed responsive design with TailwindCSS ensuring optimal user experience across devices."
+    ],
     image: 'https://res.cloudinary.com/doyqpfgiq/image/upload/v1736768820/folioassets/cointTracker_afpptl.png',
     tags: ["React", "Redux", "React Querry", "ChartJS", "TailwindCSS"],
     github: "https://github.com/yourusername/project1",
@@ -131,6 +212,13 @@ export const projects = [
     title: "NotesPlay",
     description:
       "A web application that allow user to take notes from youtube video and download them.",
+    detailedDescription: [
+      "Developed innovative note-taking platform extracting content from YouTube videos using advanced AI.",
+      "Implemented TypeScript for type-safe development and improved code maintainability.",
+      "Integrated Generative AI for intelligent content summarization and note organization.",
+      "Created seamless user workflow from video input to downloadable, formatted notes.",
+      "Built responsive interface with TailwindCSS ensuring optimal user experience across devices."
+    ],
     image: 'https://res.cloudinary.com/doyqpfgiq/image/upload/v1737055034/folioassets/notesplay2_sl0hij.png',
     tags: ["Next.js", "TypeScript", "GenAI", "Tailwind CSS"],
     github: "https://github.com/yourusername/project1",
