@@ -6,81 +6,8 @@ import Image from 'next/image';
 import { useState } from 'react';
 import GlassLoader from '@/components/glassLoader';
 import InfiniteMenu from '@/components/ui/InfiniteMenu';
-const items = [
-  {
-    image: 'https://res.cloudinary.com/doyqpfgiq/image/upload/v1737307493/folioassets/img11_k6yaas.jpg',
-    link: 'https://google.com/',
-    title: '',
-    description: 'Shimla '
-  },
-  {
-    image: 'https://res.cloudinary.com/doyqpfgiq/image/upload/v1737307513/folioassets/image5_bh7ub6.jpg',
-    link: 'https://google.com/',
-    title: '',
-    description: 'This is pretty cool, right?'
-  },
-  {
-    image: 'https://res.cloudinary.com/doyqpfgiq/image/upload/v1737307494/folioassets/image6_nidc3p.jpg',
-    link: 'https://google.com/',
-    title: '',
-    description: 'This is pretty cool, right?'
-  },
-  {
-    image: 'https://res.cloudinary.com/doyqpfgiq/image/upload/v1737307535/folioassets/image3_cqzb8p.jpg',
-    link: 'https://google.com/',
-    title: '',
-    description: 'This is pretty cool, right?'
-  },
-  {
-    image: 'https://res.cloudinary.com/doyqpfgiq/image/upload/v1737307535/folioassets/image1_p3dob9.jpg',
-    link: 'https://google.com/',
-    title: '',
-    description: 'This is pretty cool, right?'
-  },
-  {
-    image: 'https://res.cloudinary.com/doyqpfgiq/image/upload/v1737307514/folioassets/image7_nhtfs9.jpg',
-    link: 'https://google.com/',
-    title: '',
-    description: 'This is pretty cool, right?'
-  },
-  {
-    image: 'https://res.cloudinary.com/doyqpfgiq/image/upload/v1737307497/folioassets/img9_jvn59s.jpg',
-    link: 'https://google.com/',
-    title: '',
-    description: 'This is pretty cool, right?'
-  },
-  {
-    image: 'https://res.cloudinary.com/doyqpfgiq/image/upload/v1737307492/folioassets/image4_ioidqv.jpg',
-    link: 'https://google.com/',
-    title: '',
-    description: 'This is pretty cool, right?'
-  },
-  {
-    image: 'https://res.cloudinary.com/doyqpfgiq/image/upload/v1737307495/folioassets/img8_tfzvup.jpg',
-    link: 'https://google.com/',
-    title: '',
-    description: 'This is pretty cool, right?'
-  },
-  {
-    image: 'https://res.cloudinary.com/doyqpfgiq/image/upload/v1737307493/folioassets/img11_k6yaas.jpg',
-    link: 'https://google.com/',
-    title: '',
-    description: 'This is pretty cool, right?'
-  },
-  {
-    image: 'https://res.cloudinary.com/doyqpfgiq/image/upload/v1737307499/folioassets/img10_iibu3s.jpg',
-    link: 'https://google.com/',
-    title: '',
-    description: 'This is pretty cool, right?'
-  },
-  {
-    image: 'https://res.cloudinary.com/doyqpfgiq/image/upload/v1737307493/folioassets/img12_sxrtx7.jpg',
-    link: 'https://google.com/',
-    title: '',
-    description: 'This is pretty cool, right?'
-  }
+import { items } from '@/public/constants';
 
-];
 export default function ProjectsPage() {
   return (
     <div className="container mx-auto max-w-9xl px-5 py-16 mt-10 sm:mt-20 font-futuraBook">
