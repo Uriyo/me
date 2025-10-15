@@ -61,24 +61,42 @@ export function Tech() {
         transition={{ duration: 0.8 }}
         className="absolute inset-0 mt-96 flex items-center justify-center flex-col text-center"
       >
-        <h1 className="text-4xl md:text-8xl font-semibold ">
-        
-        </h1>
+        <h1 className="text-4xl md:text-8xl font-semibold "></h1>
         <div className="flex space-x-6  ">
-          <Link href="https://github.com/Uriyo" target="_blank" className="hover:scale-110 transition-transform">
-            <Github className="w-8 h-8 text-gray-400" />
+          <Link
+            href="https://github.com/Uriyo"
+            target="_blank"
+            className="group hover:scale-110 transition-transform"
+          >
+            <Github className="w-8 h-8 text-gray-400 group-hover:text-white transition-colors duration-300" />
           </Link>
-          <Link href="https://www.linkedin.com/in/kushagra6434/" target="_blank" className="hover:scale-110 transition-transform">
-            <Linkedin className="w-8 h-8 text-gray-400" />
+
+          <Link
+            href="https://www.linkedin.com/in/kushagra6434/"
+            target="_blank"
+            className="group hover:scale-110 transition-transform"
+          >
+            <Linkedin className="w-8 h-8 text-gray-400 group-hover:text-[#0077B5] transition-colors duration-300" />
           </Link>
-          <Link href="https://x.com/Kushagra_Gojo" target="_blank" className="hover:scale-110 transition-transform">
-            <Twitter className="w-8 h-8 text-gray-400" />
+          
+          <Link
+            href="mailto:kushagra6434@gmail.com"
+            className="group hover:scale-110 transition-transform"
+          >
+            <Mail className="w-8 h-8 text-gray-400 group-hover:text-[#EA4335] transition-colors duration-300" />
           </Link>
-          <Link href="mailto:kushagra6434@gmail.com" className="hover:scale-110 transition-transform">
-            <Mail className="w-8 h-8 text-gray-400" />
+          
+          <Link
+            href="https://x.com/Kushagra_Gojo"
+            target="_blank"
+            className="group hover:scale-110 transition-transform"
+          >
+            <Twitter className="w-8 h-8 text-gray-400 group-hover:text-[#1DA1F2] transition-colors duration-300" />
           </Link>
+
+          
         </div>
-        
+ 
         {/* <motion.button
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}

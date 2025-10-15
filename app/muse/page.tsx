@@ -1,22 +1,93 @@
 'use client';
 
-import { muses } from '@/public/constants';
+// import { muses } from '@/public/constants';
 import Image from 'next/image';
-import { MapPin } from 'lucide-react';
+// import { MapPin } from 'lucide-react';
 import { useState } from 'react';
 import GlassLoader from '@/components/glassLoader';
+import InfiniteMenu from '@/components/ui/InfiniteMenu';
+const items = [
+  {
+    image: 'https://res.cloudinary.com/doyqpfgiq/image/upload/v1737307493/folioassets/img11_k6yaas.jpg',
+    link: 'https://google.com/',
+    title: '',
+    description: 'Shimla '
+  },
+  {
+    image: 'https://res.cloudinary.com/doyqpfgiq/image/upload/v1737307513/folioassets/image5_bh7ub6.jpg',
+    link: 'https://google.com/',
+    title: '',
+    description: 'This is pretty cool, right?'
+  },
+  {
+    image: 'https://res.cloudinary.com/doyqpfgiq/image/upload/v1737307494/folioassets/image6_nidc3p.jpg',
+    link: 'https://google.com/',
+    title: '',
+    description: 'This is pretty cool, right?'
+  },
+  {
+    image: 'https://res.cloudinary.com/doyqpfgiq/image/upload/v1737307535/folioassets/image3_cqzb8p.jpg',
+    link: 'https://google.com/',
+    title: '',
+    description: 'This is pretty cool, right?'
+  },
+  {
+    image: 'https://res.cloudinary.com/doyqpfgiq/image/upload/v1737307535/folioassets/image1_p3dob9.jpg',
+    link: 'https://google.com/',
+    title: '',
+    description: 'This is pretty cool, right?'
+  },
+  {
+    image: 'https://res.cloudinary.com/doyqpfgiq/image/upload/v1737307514/folioassets/image7_nhtfs9.jpg',
+    link: 'https://google.com/',
+    title: '',
+    description: 'This is pretty cool, right?'
+  },
+  {
+    image: 'https://res.cloudinary.com/doyqpfgiq/image/upload/v1737307497/folioassets/img9_jvn59s.jpg',
+    link: 'https://google.com/',
+    title: '',
+    description: 'This is pretty cool, right?'
+  },
+  {
+    image: 'https://res.cloudinary.com/doyqpfgiq/image/upload/v1737307492/folioassets/image4_ioidqv.jpg',
+    link: 'https://google.com/',
+    title: '',
+    description: 'This is pretty cool, right?'
+  },
+  {
+    image: 'https://res.cloudinary.com/doyqpfgiq/image/upload/v1737307495/folioassets/img8_tfzvup.jpg',
+    link: 'https://google.com/',
+    title: '',
+    description: 'This is pretty cool, right?'
+  },
+  {
+    image: 'https://res.cloudinary.com/doyqpfgiq/image/upload/v1737307493/folioassets/img11_k6yaas.jpg',
+    link: 'https://google.com/',
+    title: '',
+    description: 'This is pretty cool, right?'
+  },
+  {
+    image: 'https://res.cloudinary.com/doyqpfgiq/image/upload/v1737307499/folioassets/img10_iibu3s.jpg',
+    link: 'https://google.com/',
+    title: '',
+    description: 'This is pretty cool, right?'
+  },
+  {
+    image: 'https://res.cloudinary.com/doyqpfgiq/image/upload/v1737307493/folioassets/img12_sxrtx7.jpg',
+    link: 'https://google.com/',
+    title: '',
+    description: 'This is pretty cool, right?'
+  }
 
-
+];
 export default function ProjectsPage() {
   return (
-    <div className="container mx-auto max-w-7xl px-5 py-16 mt-10 sm:mt-20 font-futuraBook">
-      <h1 className="text-4xl font-bold text-center sm:ml-7 sm:text-left mb-8">Muse</h1>
-
-
+    <div className="container mx-auto max-w-9xl px-5 py-16 mt-10 sm:mt-20 font-futuraBook">
       <div className="h-full py-6 sm:py-8 lg:py-12">
-        <div className="mx-auto max-w-screen-3xl px-4 md:px-8">
-          <div className="grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-6 xl:gap-8">
-            {
+        {/* <div className="mx-auto max-w-screen-9xl px-4 md:px-8"> */}
+          {/* <div className="grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-6 xl:gap-8"> */}
+            {/* {
               muses.map((muse,index)=>{
                 // eslint-disable-next-line react-hooks/rules-of-hooks
                 const [isLoading, setIsLoading] = useState(true);
@@ -51,10 +122,16 @@ export default function ProjectsPage() {
                   </div>
                 );
               })
-            }
-          </div>
+            } */}
+            
+            <div style={{ height: '600px', position: 'relative' }}>
+              <InfiniteMenu items={items}/>
+            </div>
+
+
+          {/* </div> */}
         </div>
-      </div>
+      {/* </div> */}
     </div>
   );
 }

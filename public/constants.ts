@@ -237,6 +237,12 @@ export const blogs = [
       "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*0PuSsGqzIbXRtXKwl69R-g.avif",
     tags: ["Vercel", "AI", "Cloud"],
     github: "https://github.com/Uriyo/spendWise",
+    card_color: {
+      r: 130,
+      g: 0,
+      b: 129,
+      a: 0.35,
+    },
     demo: "https://medium.com/@kgang6434/vercel-ship-2025-vercel-is-now-turned-into-the-ai-cloud-eeb716eb02df",
   },
   {
@@ -247,6 +253,12 @@ export const blogs = [
       "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*wnbpbKLxEmBHwBFYnQJLpg.png",
     tags: ["CI/CD", "goCD", "Automation"],
     github: "https://github.com/Uriyo/spendWise",
+    card_color: {
+      r: 255,
+      g: 255,
+      b: 255,
+      a: 0.25,
+    },
     demo: "https://medium.com/@kgang6434/ci-cd-with-gocd-4710d5bb75d1",
   },
   {
@@ -257,6 +269,12 @@ export const blogs = [
       "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*Jh8xgI49k8FKTepTIcYjGA.avif",
     tags: ["Database", "Replication", "Partitioning"],
     github: "https://github.com/Uriyo/spendWise",
+    card_color: {
+      r: 0,
+      g: 229,
+      b: 255,
+      a: 0.2,
+    },
     demo: "https://medium.com/@kgang6434/database-replication-and-partitioning-4710d5bb75d1",
   },
   {
@@ -267,6 +285,12 @@ export const blogs = [
       "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*BBrlBnWl0xWSOnS9IZHxlA.png",
     tags: ["Threads", "NodeJS", "Multithreading"],
     github: "https://github.com/Uriyo/spendWise",
+    card_color: {
+      r: 101,
+      g: 198,
+      b: 187,
+      a: 0.5,
+    },
     demo: "https://medium.com/@kgang6434/hyperthreading-worth-it-11271f255176",
   },
   {
@@ -277,6 +301,12 @@ export const blogs = [
       "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*e6RD9x4ycH5m8_IYSv3Y6Q.png",
     tags: ["Threads", "NodeJS", "Multithreading"],
     github: "https://github.com/Uriyo/spendWise",
+    card_color: {
+      r: 178,
+      g: 222,
+      b: 39,
+      a: 0.3,
+    },
     demo: "https://www.kushagragangwar.tech/blog/thread-nodejs",
   },
   {
@@ -287,6 +317,12 @@ export const blogs = [
       "https://miro.medium.com/v2/resize:fit:828/format:webp/1*YePVzjkjsadOqzQ03wl5kA.png",
     tags: ["React", "Frontend Dev"],
     github: "https://github.com/yourusername/project1",
+    card_color: {
+      r: 173,
+      g: 216,
+      b: 248,
+      a: 0.5,
+    },
     demo: "https://www.kushagragangwar.tech/blog/react19",
   },
   {
@@ -296,6 +332,12 @@ export const blogs = [
     image: aws,
     tags: ["AWS", "Cloud"],
     github: "https://github.com/yourusername/project1",
+    card_color: {
+      r: 255,
+      g: 213,
+      b: 128,
+      a: 0.55,
+    },
     demo: "https://www.kushagragangwar.tech/blog/leveraging-aws",
   },
   {
@@ -306,6 +348,12 @@ export const blogs = [
       "https://miro.medium.com/v2/resize:fit:828/format:webp/1*Tdv-AyrlsM0eE8ikanQK5Q.jpeg",
     tags: ["Fiber", "React", "Re-Rendering"],
     github: "https://github.com/yourusername/project1",
+    card_color: {
+      r: 173,
+      g: 216,
+      b: 230,
+      a: 0.5,
+    },
     demo: "https://www.kushagragangwar.tech/blog/fiber-dynamics",
   },
   {
@@ -316,6 +364,12 @@ export const blogs = [
       "https://miro.medium.com/v2/resize:fit:828/format:webp/1*5c_emW3v-j5Hhrajb-pxlw.png",
     tags: ["CORS", "Preflight Request", "CSRF"],
     github: "https://github.com/yourusername/project1",
+    card_color: {
+      r: 207,
+      g: 159,
+      b: 255,
+      a: 0.5,
+    },
     demo: "https://www.kushagragangwar.tech/blog/cors-unchained",
   },
 ];

@@ -7,6 +7,7 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { blogs } from '@/public/constants';
 import Image from 'next/image';
+import SpotlightCard from '@/components/ui/SpotlightCard';
 
 
 export default function ProjectsPage() {
@@ -15,7 +16,8 @@ export default function ProjectsPage() {
       <h1 className="text-4xl font-bold mb-8 font-futuraBook text-center sm:text-left">TechToks</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {blogs.map((project, index) => (
-          <Card key={index} className="overflow-hidden">
+          <SpotlightCard key={index} className="overflow-hidden" spotlightColor={`rgba(${project.card_color.r}, ${project.card_color.g}, ${project.card_color.b}, ${project.card_color.a})`}>
+          {/* <Card key={index} className="overflow-hidden"> */}
             <Image
               width={80}
               height={40}
@@ -50,7 +52,8 @@ export default function ProjectsPage() {
                 </Button>
               </div>
             </CardContent>
-          </Card>
+          {/* </Card> */}
+          </SpotlightCard>
         ))}
       </div>
     </div>
