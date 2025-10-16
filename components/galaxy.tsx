@@ -141,14 +141,26 @@ export function Galaxy() {
           <br />
           • Created innovative solutions that enhance user engagement and experience
         </p>
+
         
 
-        <div className="tracking-wider text-3xl text-center mt-64">
+        <div className="flex justify-center items-center py-10">
+           <iframe
+              src="https://portfolio-bot-tau.vercel.app/"
+              width="400"
+              height="600"
+              className="border-none rounded-xl shadow-2xl"
+              allow="microphone; camera"
+              title="Portfolio Chatbot"
+            ></iframe>
+          </div>
+
+        <div className="tracking-wider text-3xl text-center lg:mt-64">
           TECHNOLOGIES I HAVE WORKED ON
           <br />
           <br />
           <br />
-          <div className="pb-28  grid md:grid-cols-4 grid-cols-2 gap-6 max-w-5xl mx-28 ">
+          <div className="pb-28  grid md:grid-cols-4 grid-cols-2 gap-6 max-w-5xl mx-10 lg:mx-28 ">
             <Image alt="next" height={90} width={90} src={next}   className="transition-transform duration-300 hover:scale-110"/>
             <Image alt="langchain" height={90} width={90} src={langchain}  className="transition-transform duration-300 hover:scale-110" />
             <Image alt="n8n" height={90} width={90} src={n8n}  className="transition-transform duration-300 hover:scale-110" />
@@ -187,8 +199,12 @@ export function Galaxy() {
                 className="transition-transform duration-300 hover:scale-110"
             />
           </div>
+          
+
         </div>
       </motion.div>
+
+
       {/* <Tech/> */}
       {/* <Canvas camera={{ position: [0, 0, 1] }}>
         <Stars />
