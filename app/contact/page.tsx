@@ -98,7 +98,7 @@ export default function ContactPage() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <h1 className="text-4xl font-bold mb-8 text-center sm:text-left">Get in Touch</h1>
+        <h1 className="text-4xl font-bold mb-8 text-center sm:text-left">Let&apos;s Build something!</h1>
 
         <div className="grid md:grid-cols-2 gap-8">
           {/* Contact Information */}
