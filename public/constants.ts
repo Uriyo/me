@@ -529,11 +529,11 @@ export const navItems = [
     name: "Projects",
     icon: FolderGit2,
   },
-  {
-    path: "/resume",
-    name: "Resume",
-    icon: FileText,
-  },
+  // {
+  //   path: "/resume",
+  //   name: "Resume",
+  //   icon: FileText,
+  // },
   {
     path: "/blog",
     name: "TechToks",
